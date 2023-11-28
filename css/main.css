@@ -7,6 +7,7 @@
 }
 a {
     text-decoration: none;
+    color: #000000;
 }
 li {
     list-style: none;
@@ -69,19 +70,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 500;
 }
-.navbar .nav_list li{
-    padding: 15px 0 15px 30px;
+.navbar .nav_list #sec_on{
+    background-color: #eee;
+}
+.navbar .nav_list li {
     width: 90%;
     display: flex;
     cursor: pointer;
 }
-.navbar .nav_list li p{
-    padding-left: 10px;
+.navbar .nav_list li a{
+    padding: 15px 0 15px 30px;
     text-transform: capitalize;
+    /* border: 1px solid; */
+    width: 100%;
 }
-.navbar .nav_list li .icon{
-    width: 10%;
+.navbar .nav_list li i{
+    width: 40px;
     /* border: 1px solid; */
     text-align: center;
 }
@@ -89,3 +95,73 @@ body {
     background-color: #eee;
 }
 /* end navbar  */
+/* start page header  */
+.page {
+    width: calc(100vw - 250px);
+}
+.page header {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 0 4px #ddd;
+}
+.page header .logo{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.page header .logo img{
+    width: 45px;
+}
+.page header .search_bar{
+    position: relative;
+}
+.page header .search_bar input{
+    padding: 10px 0 10px 50px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-transform: capitalize;
+    border: 1px solid #ddd;
+}
+.page header .search_bar input:focus{
+    outline: none;
+}
+.page header .search_bar i{
+    position: absolute;
+    left: 5%;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+/* end page header  */
+/* start page  */
+.page_name {
+    text-transform: capitalize;
+    width: 180px;
+    padding: 0 0 10px;
+    position: relative;
+}
+.page_name::before {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    content: "";
+    width: 50%;
+    height: 10%;
+    background-color: white;
+}
+.page_name::after {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    content: "";
+    width: 25%;
+    height: 10%;
+    background-color: #000000;
+}
+.sections {
+    padding: 10px 30px 30px;
+    background-color: #8888882e;
+}
+/* end page  */

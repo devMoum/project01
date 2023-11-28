@@ -1,0 +1,17 @@
+/* start sections  */
+.sections .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.sections .container .sec{
+    background-color: blueviolet;
+    height: 400px;
+}
+.sections .projects{
+    background-color:aquamarine;
+    width: 100%;
+    min-height: 400px;
+}
+/* end section  */
