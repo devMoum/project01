@@ -20,6 +20,7 @@ body {
 /* start navbar  */
 .navbar {
     width: 250px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 5px #ddd;

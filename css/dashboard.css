@@ -13,7 +13,6 @@
 }
 .sections .container .sec{
     background-color: white;
-    /* height: 400px; */
 }
 .sections .projects{
     background-color:aquamarine;
@@ -22,17 +21,16 @@
 }
 /* end section  */
 /* start welcome  */
-.sections .welcome {
-}
 .sections .welcome .top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* border-bottom: solid; */
     padding: 10px 20px 20px;
+    height: 40%;
 }
 .sections .welcome .top img{
-    width: 200px;
+    width: 150px;
 }
 .sections .welcome .top h3{
     font-size: 28px;
@@ -45,12 +43,15 @@
     text-transform: capitalize;
 }
 .sections .welcome .box{
+    height: 60%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-top: solid #ddd;
     position: relative;
     padding-top: 30px;
     padding-bottom: 20px;
+    /* border: solid; */
 }
 .sections .welcome .box img{
     width: 45px;
@@ -84,3 +85,55 @@
     text-transform: capitalize;
 }
 /* end welcome  */
+/* start draft  */
+.sections .draft .top{
+    padding: 20px;
+}
+.sections .draft .top h3{
+    text-transform: capitalize;
+    font-size: 28px;
+}
+.sections .draft .top p{
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.sections .draft .box{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sections .draft .box input:first-of-type{
+    padding: 10px 15px;
+    font-size: 14px;
+    text-transform: capitalize;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background-color: #8888882e;
+}
+.sections .draft .box textarea{
+    font-size: 14px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    height: 100px;
+    background-color: #8888882e;
+}
+.sections .draft .box input:last-of-type{
+    width: 80px;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid cornflowerblue;
+    text-transform: capitalize;
+    color: white;
+    background-color: cornflowerblue;
+    align-self: end;
+    cursor: pointer;
+}
+
+/* end draft  */
