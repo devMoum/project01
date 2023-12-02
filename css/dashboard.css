@@ -5,9 +5,15 @@
     gap: 40px;
     margin-bottom: 40px;
 }
+@media (max-width: 1200px) {
+    .sections .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
 .sections .container .sec{
-    background-color: blueviolet;
-    height: 400px;
+    background-color: white;
+    /* height: 400px; */
 }
 .sections .projects{
     background-color:aquamarine;
@@ -15,3 +21,66 @@
     min-height: 400px;
 }
 /* end section  */
+/* start welcome  */
+.sections .welcome {
+}
+.sections .welcome .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: solid; */
+    padding: 10px 20px 20px;
+}
+.sections .welcome .top img{
+    width: 200px;
+}
+.sections .welcome .top h3{
+    font-size: 28px;
+    text-transform: capitalize;
+}
+.sections .welcome .top p{
+    margin-top: 5px;
+    font-size: 16px;
+    color: black;
+    text-transform: capitalize;
+}
+.sections .welcome .box{
+    display: flex;
+    flex-direction: column;
+    border-top: solid #ddd;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.sections .welcome .box img{
+    width: 45px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.sections .welcome .box .stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+}
+.sections .welcome .box .stats .stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.sections .welcome .box .stats .stat p{
+    font-size: 14px;
+}
+.sections .welcome .box a{
+    align-self: end;
+    margin: 20px 20px 0 0;
+    padding: 5px 15px;
+    background-color: cornflowerblue;
+    color: white;
+    text-transform: capitalize;
+}
+/* end welcome  */

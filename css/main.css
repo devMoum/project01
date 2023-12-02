@@ -21,7 +21,6 @@ body {
 .navbar {
     width: 250px;
     display: flex;
-    height: 100vh;
     flex-direction: column;
     box-shadow: 0 5px 5px #ddd;
 }
