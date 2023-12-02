@@ -1,3 +1,13 @@
+:root {
+    --blue-back: #0075ff33;
+    --orange-back: #f59e0b33;
+    --green-back: #22c55e33;
+    --red-back: #ff000033;
+    --blue: #0075ff;
+    --orange: #f59e0b;
+    --green: #22c55e;
+    --red: #f44336;
+}
 /* start sections  */
 .sections .container {
     display: grid;
@@ -80,7 +90,7 @@
     align-self: end;
     margin: 20px 20px 0 0;
     padding: 5px 15px;
-    background-color: cornflowerblue;
+    background-color: var(--blue);
     color: white;
     text-transform: capitalize;
 }
@@ -128,12 +138,134 @@
     padding: 5px 15px;
     font-size: 16px;
     font-weight: 500;
-    border: 1px solid cornflowerblue;
+    border: 1px solid var(--blue);
     text-transform: capitalize;
     color: white;
-    background-color: cornflowerblue;
+    background-color: var(--blue);
     align-self: end;
     cursor: pointer;
 }
-
 /* end draft  */
+/* start targets  */
+.sections .targets {
+    padding: 20px;
+}
+.sections .targets .top{
+    padding-bottom: 30px;
+}
+.sections .targets .top h3{
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.sections .targets .top p{
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.sections .targets .box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sections .targets .box .stat{
+    display: flex;
+    gap: 30px;
+}
+.sections .targets .box .stat i{
+    width: 80px;
+    height: 80px;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: none;
+}
+.sections .targets .box .stat1 i{
+    background-color: var(--blue-back);
+    color: var(--blue);
+}
+.sections .targets .box .stat2 i{
+    background-color: var(--orange-back);
+    color: var(--orange);
+}
+.sections .targets .box .stat3 i{
+    background-color: var(--green-back);
+    color: var(--green);
+}
+.sections .targets .box .stat .lvl{
+    width: 80%;
+    padding: 5px 0;
+    position: relative;
+}
+.sections .targets .box .stat span{
+    position: absolute;
+    bottom: 50%;
+    font-size: 14px;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 8px;
+    transform: translate(-50%, 50%);
+}
+.sections .targets .box .stat .money span{
+    left: 80%;
+    background-color: var(--blue);
+}
+.sections .targets .box .stat .proj span{
+    left: 67%;
+    background-color: var(--orange);
+}
+.sections .targets .box .stat .team span{
+    left: 75%;
+    background-color: var(--green);
+}
+.sections .targets .box .stat .money::before,
+.sections .targets .box .stat .proj::before,
+.sections .targets .box .stat .team::before{
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    height: 6px;
+}
+.sections .targets .box .stat .money::before{
+    width: 80%;
+    background-color: var(--blue);
+}
+.sections .targets .box .stat .proj::before{
+    width: 67%;
+    background-color: var(--orange);
+}
+.sections .targets .box .stat .team::before{
+    width: 75%;
+    background-color: var(--green);
+}
+.sections .targets .box .stat .money::after,
+.sections .targets .box .stat .proj::after,
+.sections .targets .box .stat .team::after{
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+}
+.sections .targets .box .stat .money::after{
+    background-color: var(--blue-back);
+}
+.sections .targets .box .stat .proj::after{
+    background-color: var(--orange-back);
+}
+.sections .targets .box .stat .team::after{
+    background-color: var(--green-back);
+}
+.sections .targets .box .stat .lvl > p{
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.sections .targets .box .stat .lvl h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* end targets  */
