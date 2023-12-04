@@ -269,3 +269,67 @@
     font-weight: 600;
 }
 /* end targets  */
+/* start tickets  */
+.sections .tickets {
+    padding: 20px;
+}
+.sections .tickets .top{
+    margin-bottom: 20px;
+}
+.sections .tickets .top h3{
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.sections .tickets .top p{
+    font-size: 16px;
+}
+.sections .tickets .box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.sections .tickets .box .stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 3px solid;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+.sections .tickets .box .total{
+    border-color: var(--orange-back);
+}
+.sections .tickets .box .pending{
+    border-color: var(--blue-back);
+}
+.sections .tickets .box .closed{
+    border-color: var(--green-back);
+}
+.sections .tickets .box .deleted{
+    border-color: var(--red-back);
+}
+.sections .tickets .box .stat i,
+.sections .tickets .box .stat h3{
+    font-size: 28px;
+}
+.sections .tickets .box .total i{
+    color: var(--orange);
+}
+.sections .tickets .box .pending i{
+    color: var(--blue);
+}
+.sections .tickets .box .closed i{
+    color: var(--green);
+}
+.sections .tickets .box .deleted i{
+    color: var(--red);
+}
+.sections .tickets .box .stat p{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+/* end tickets  */
