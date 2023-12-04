@@ -331,5 +331,48 @@
     font-size: 16px;
     text-transform: capitalize;
 }
-
 /* end tickets  */
+/* start news  */
+.sections .news {
+    padding: 20px;
+}
+.sections .news h3{
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.sections .news .box .new {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.sections .news .box .new:last-of-type {
+    border: none;
+    padding: 20px 0 0;
+}
+.sections .news .box .new img{
+    width: 100px;
+    border-radius: 8px;
+}
+.sections .news .box .new .text{
+    position: relative;
+    width: 100%;
+}
+.sections .news .box .new .text h4{
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.sections .news .box .new .text span{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    background-color: #ddd;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+/* end news  */
