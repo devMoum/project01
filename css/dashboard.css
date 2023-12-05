@@ -93,6 +93,7 @@
     background-color: var(--blue);
     color: white;
     text-transform: capitalize;
+    font-weight: 500;
 }
 /* end welcome  */
 /* start draft  */
@@ -504,3 +505,99 @@
     font-size: 14px;
 }
 /* end uploads  */
+/* start progress  */
+.sections .progress {
+    padding: 20px;
+}
+.progress h3{
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.progress .box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 20px;
+}
+.progress .box::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 12%;
+    transform: translateX(-50%);
+    height: 77%;
+    width: 3px;
+    background-color: var(--blue);
+}
+.progress .box img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    opacity: 20%;
+}
+.progress .box .proj{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0 10px 30px;
+    position: relative;
+}
+.progress .box .proj::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--blue);
+    z-index: 1;
+    background-color: white;
+}
+.progress .box .done::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    background-color: var(--blue);
+}
+.progress .box .pend::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+@keyframes blink {
+    0%{
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 20px;
+        height: 20px;
+        background-color: var(--blue);
+    }
+    100% {
+        width: 0;
+        height: 0;
+    }
+}
+/* end progress  */
