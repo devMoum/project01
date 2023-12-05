@@ -118,20 +118,20 @@
     padding: 10px 15px;
     font-size: 14px;
     text-transform: capitalize;
-    border: 1px solid #ddd;
+    border: 1px solid #eee;
     border-radius: 8px;
     outline: none;
-    background-color: #8888882e;
+    background-color: #eee;
 }
 .sections .draft .box textarea{
     font-size: 14px;
     padding: 10px 15px;
     text-transform: capitalize;
-    border: 1px solid #ddd;
+    border: 1px solid #eee;
     border-radius: 8px;
     outline: none;
     height: 100px;
-    background-color: #8888882e;
+    background-color: #eee;
 }
 .sections .draft .box input:last-of-type{
     width: 80px;
@@ -369,7 +369,7 @@
     position: absolute;
     right: 0;
     bottom: 50%;
-    background-color: #ddd;
+    background-color: #eee;
     padding: 2px 5px;
     border-radius: 8px;
     font-size: 14px;
@@ -423,5 +423,39 @@
 .sections .tasks .box .task i:hover{
     color: var(--red);
 }
-
 /* end tasks  */
+/* start items  */
+.sections .items {
+    padding: 20px;
+}
+.sections .items h3{
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.sections .items .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    text-transform: capitalize;
+}
+.sections .items .item:first-of-type{
+    color: gray;
+}
+.sections .items .item p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.sections .items .item:first-of-type span{
+    background-color: white;
+    border: none;
+}
+.sections .items .item span{
+    border: 1px solid #ddd;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 2px 5px;
+    font-size: 14px;
+}
+/* end items  */
