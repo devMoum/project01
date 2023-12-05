@@ -503,6 +503,7 @@
     border-radius: 8px;
     padding: 2px 5px;
     font-size: 14px;
+    font-weight: 500;
 }
 /* end uploads  */
 /* start progress  */
@@ -667,3 +668,56 @@
     font-size: 14px;
 }
 /* end reminders  */
+/* start post  */
+.sections .post {
+    padding: 20px;
+    text-transform: capitalize;
+}
+.sections .post h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.sections .post .top{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #eee;
+}
+.sections .post .top img{
+    width: 50px;
+}
+.sections .post .top h4{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.sections .post .top p{
+    font-size: 15px;
+    color: gray;
+}
+.sections .post .box{
+    padding: 50px 0;
+    line-height: 1.7;
+    border-bottom: 2px solid #eee;
+    font-weight: 500;
+}
+.sections .post .bottom{
+    padding: 30px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sections .post .bottom .likes,
+.sections .post .bottom .comments{
+    position: relative;
+}
+.sections .post .bottom .likes i,
+.sections .post .bottom .comments i{
+    position: absolute;
+    left: -50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/* end post  */
