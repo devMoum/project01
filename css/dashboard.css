@@ -711,6 +711,7 @@
 .sections .post .bottom .likes,
 .sections .post .bottom .comments{
     position: relative;
+    color: gray;
 }
 .sections .post .bottom .likes i,
 .sections .post .bottom .comments i{
@@ -719,5 +720,92 @@
     bottom: 50%;
     transform: translate(-50%, 50%);
 }
-
 /* end post  */
+/* start social  */
+.sections .social {
+    padding: 20px;
+    text-transform: capitalize;
+}
+.sections .social .box{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sections .social span{
+    text-transform: uppercase;
+}
+.sections .social h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.sections .social .stat{
+    display: flex;
+    font-weight: 500;
+    color: white;
+}
+.sections .social .stat i{
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sections .social .blue i{
+    background-color: var(--blue);
+}
+.sections .social .red i{
+    background-color: var(--red);
+}
+.sections .social .orange i{
+    background-color: var(--orange);
+}
+.sections .social .green i{
+    background-color: var(--green);
+}
+.sections .social .stat div{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.sections .social .blue div{
+    background-color: var(--blue-back);
+    color: var(--blue);
+}
+.sections .social .red div{
+    background-color: var(--red-back);
+    color: var(--red);
+}
+.sections .social .orange div{
+    background-color: var(--orange-back);
+    color: var(--orange);
+}
+.sections .social .green div{
+    background-color: var(--green-back);
+    color: var(--green);
+}
+.sections .social .stat div a{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.sections .social .blue div a{
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+}
+.sections .social .red div a{
+    background-color: var(--red);
+    border: 1px solid var(--red);
+}
+.sections .social .orange div a{
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+}
+.sections .social .green div a{
+    background-color: var(--green);
+    border: 1px solid var(--green);
+}
+/* end social  */
