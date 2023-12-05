@@ -376,3 +376,52 @@
     text-transform: capitalize;
 }
 /* end news  */
+/* start tasks  */
+.sections .tasks {
+    padding: 20px;
+}
+.sections .tasks h3{
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.sections .tasks .box .task {
+    padding: 15px  0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+.sections .tasks .box .task:last-of-type{
+    border: none;
+}
+.sections .tasks .box .task h4{
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.sections .tasks .box .done h4,
+.sections .tasks .box .done p{
+    text-decoration: line-through;
+}
+.sections .tasks .box .done h4,
+.sections .tasks .box .done p,
+.sections .tasks .box .done i{
+    color: #ddd;
+}
+.sections .tasks .box .task p{
+    font-size: 15px;
+}
+.sections .tasks .box .task i{
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+.sections .tasks .box .task i:hover{
+    color: var(--red);
+}
+
+/* end tasks  */
