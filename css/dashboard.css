@@ -601,3 +601,69 @@
     }
 }
 /* end progress  */
+/* start reminders  */
+.sections .reminders {
+    padding: 20px;
+    text-transform: capitalize;
+}
+.sections .reminders h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.sections .reminders .box{
+    margin-left: 25px;
+}
+.sections .reminders .task{
+    position: relative;
+    padding: 20px 0 20px 20px;
+}
+.sections .reminders .task::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    transform: translateY(-45%);
+    width: 2px;
+    height: 55%;
+}
+.sections .reminders .blue::before{
+    background-color: var(--blue);
+}
+.sections .reminders .green::before{
+    background-color: var(--green);
+}
+.sections .reminders .orange::before{
+    background-color: var(--orange);
+}
+.sections .reminders .red::before{
+    background-color: var(--red);
+}
+.sections .reminders .task::after{
+    position: absolute;
+    content: "";
+    transform: translate(-50%, 45%);
+    bottom: 50%;
+    left: -3%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.sections .reminders .blue::after{
+    background-color: var(--blue);
+}
+.sections .reminders .green::after{
+    background-color: var(--green);
+}
+.sections .reminders .orange::after{
+    background-color: var(--orange);
+}
+.sections .reminders .red::after{
+    background-color: var(--red);
+}
+.sections .reminders .task h4{
+    margin-bottom: 5px;
+}
+.sections .reminders .task p{
+    font-size: 14px;
+}
+/* end reminders  */
