@@ -1,3 +1,4 @@
+/* start global  */
 :root {
     --blue-back: #0075ff33;
     --orange-back: #f59e0b33;
@@ -24,18 +25,23 @@
 .sections .container .sec{
     background-color: white;
 }
-.sections .projects{
-    background-color:aquamarine;
-    width: 100%;
-    min-height: 400px;
-}
 /* end section  */
+.btn {
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid var(--blue);
+    text-transform: capitalize;
+    color: white;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+/* end global  */
 /* start welcome  */
 .sections .welcome .top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-bottom: solid; */
     padding: 10px 20px 20px;
     height: 40%;
 }
@@ -89,11 +95,7 @@
 .sections .welcome .box a{
     align-self: end;
     margin: 20px 20px 0 0;
-    padding: 5px 15px;
-    background-color: var(--blue);
-    color: white;
-    text-transform: capitalize;
-    font-weight: 500;
+    
 }
 /* end welcome  */
 /* start draft  */
@@ -135,16 +137,7 @@
     background-color: #eee;
 }
 .sections .draft .box input:last-of-type{
-    width: 80px;
-    padding: 5px 15px;
-    font-size: 16px;
-    font-weight: 500;
-    border: 1px solid var(--blue);
-    text-transform: capitalize;
-    color: white;
-    background-color: var(--blue);
     align-self: end;
-    cursor: pointer;
 }
 /* end draft  */
 /* start targets  */
@@ -809,3 +802,109 @@
     border: 1px solid var(--green);
 }
 /* end social  */
+/* start projects table  */
+.projects{
+    background-color: white;
+    padding: 20px;
+}
+.projects > div{
+    overflow-x: auto;
+}
+.projects h3{
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-size: 28px;
+}
+.projects table{
+    width: 1170px;
+    background-color: white;
+    text-transform: capitalize;
+    text-align: left;
+    border-spacing: 0;
+    border: 1px solid #eee;
+}
+.projects table thead th{
+    background-color: #eee;
+    padding: 15px 0 15px 15px;
+    font-size: 14px;
+}
+.projects table tbody tr td{
+    padding: 20px 0 20px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.projects table tbody tr td:nth-of-type(2){
+    width: 150px;
+    /* text-align: center; */
+    /* padding-left: 10px; */
+}
+.projects table tbody tr td:nth-of-type(4){
+    /* text-align: left; */
+    /* padding-left: 10px; */
+    width: 120px;
+}
+.projects table tbody tr td:last-of-type{
+    border-right: none;
+}
+.projects table tbody tr:last-of-type td{
+    border-bottom: none;
+}
+.projects table .team{
+    position: relative;
+}
+.projects table td img{
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    transform: translateY(50%);
+    width: 25px;
+    border-radius: 50%;
+}
+.projects table td img:nth-of-type(2){
+    left: 25%;
+}
+.projects table td img:nth-of-type(3){
+    left: 40%;
+}
+.projects table td img:nth-of-type(4){
+    left: 55%;
+}
+.projects table tbody .status{
+    position: relative;
+    font-size: 13px;
+}
+.projects table tbody .status span{
+    position: absolute;
+    left: 10%;
+    bottom: 50%;
+    transform: translateY(50%);
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 3px 10px;
+}
+.projects table tbody .pend span{
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: white;
+}
+.projects table tbody .comp span{
+    background-color: var(--green);
+    border-color: var(--green);
+    color: white;
+}
+.projects table tbody .rej span{
+    background-color: var(--red);
+    border-color: var(--red);
+    color: white;
+}
+.projects table tbody .progress span{
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: white;
+}
+.projects table tbody tr:hover{
+    background-color: #f9f9f9;
+}
+/* end projects table  */
