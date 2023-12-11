@@ -13,14 +13,13 @@
 .sections .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    margin-bottom: 40px;
+    gap: 30px;
+    margin-bottom: 30px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .sections .container {
         grid-template-columns: repeat(1, 1fr);
     }
-    
 }
 .sections .container .sec{
     background-color: white;
@@ -38,15 +37,24 @@
 }
 /* end global  */
 /* start welcome  */
+.sections .welcome {
+    display: flex;
+    flex-direction: column;
+}
 .sections .welcome .top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px 20px;
-    height: 40%;
+    padding: 20px 20px 20px;
 }
 .sections .welcome .top img{
     width: 150px;
+}
+.sections .welcome .top .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .sections .welcome .top h3{
     font-size: 28px;
@@ -59,20 +67,20 @@
     text-transform: capitalize;
 }
 .sections .welcome .box{
-    height: 60%;
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: end;
     justify-content: space-between;
+    gap: 30px;
     border-top: solid #ddd;
-    position: relative;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    /* border: solid; */
+    height: 100%;
+    padding: 40px 20px 20px;
 }
 .sections .welcome .box img{
+    position: absolute;
     width: 45px;
     border-radius: 50%;
-    position: absolute;
     top: 0;
     left: 10%;
     transform: translate(-50%, -50%);
@@ -82,6 +90,7 @@
     justify-content: space-around;
     align-items: center;
     text-transform: capitalize;
+    width: 100%;
 }
 .sections .welcome .box .stats .stat{
     display: flex;
@@ -94,9 +103,30 @@
     font-size: 14px;
 }
 .sections .welcome .box a{
-    align-self: end;
-    margin: 20px 20px 0 0;
-    
+    display: block;
+}
+@media (max-width: 550px) {
+    .sections .welcome .top{
+        padding-bottom: 40px;
+    }
+    .sections .welcome .top img{
+        display: none;
+    }
+    .sections .welcome .top {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sections .welcome .box,
+    .sections .welcome .box .stats{
+        flex-direction: column;
+    }
+    .sections .welcome .box .stats{
+        /* justify-content: space-between; */
+        gap: 30px;
+    }
+    .sections .welcome .box img{
+        left: 50%;
+    }
 }
 /* end welcome  */
 /* start draft  */
@@ -267,12 +297,12 @@
 /* start tickets  */
 .sections .tickets {
     padding: 20px;
+    text-transform: capitalize;
 }
 .sections .tickets .top{
     margin-bottom: 20px;
 }
 .sections .tickets .top h3{
-    text-transform: capitalize;
     font-size: 28px;
     margin-bottom: 5px;
 }
@@ -283,6 +313,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+}
+@media (max-width: 500px) {
+    .sections .tickets .box{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 .sections .tickets .box .stat{
     display: flex;
@@ -324,7 +359,6 @@
 }
 .sections .tickets .box .stat p{
     font-size: 16px;
-    text-transform: capitalize;
 }
 /* end tickets  */
 /* start news  */
@@ -358,17 +392,25 @@
 .sections .news .box .new .text h4{
     text-transform: capitalize;
     font-size: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 .sections .news .box .new .text span{
     position: absolute;
     right: 0;
     bottom: 50%;
     background-color: #eee;
-    padding: 2px 5px;
+    padding: 2px 8px;
     border-radius: 8px;
     font-size: 14px;
     text-transform: capitalize;
+}
+@media (max-width: 550px) {
+    .sections .news .box .new {
+        flex-direction: column;
+    }
+    .sections .news .box .new .text span{
+        bottom: 65%;
+    }
 }
 /* end news  */
 /* start tasks  */
@@ -438,7 +480,8 @@
 .sections .items .item:first-of-type{
     color: gray;
 }
-.sections .items .item p{
+.sections .items .item p,
+.sections .items .item:first-of-type span{
     font-size: 16px;
     font-weight: 500;
 }
@@ -638,7 +681,7 @@
     content: "";
     transform: translate(-50%, 45%);
     bottom: 50%;
-    left: -3%;
+    left: -20px;
     width: 15px;
     height: 15px;
     border-radius: 50%;
