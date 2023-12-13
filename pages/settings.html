@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
     <!-- main css  -->
     <link rel="stylesheet" href="../css/main.css">
+    <!-- settings css  -->
+    <link rel="stylesheet" href="../css/settings.css">
     <title>Settings</title>
 </head>
 <body>
@@ -85,6 +87,89 @@
         <div class="sections">
             <h1 class="page_name">settings</h1>
             <div class="container">
+                <div class="sec control">
+                    <div class="top">
+                        <h3>site control</h3>
+                        <p>control the website if there is maintenance</p>
+                    </div>
+                    <div class="config">
+                        <div>
+                            <h4>website control</h4>
+                            <p>open/close website and type the reason</p>
+                        </div>
+                        <div class="switch control-switch"></div>
+                    </div>
+                    <textarea name="close" placeholder="close message content.."></textarea>
+                </div>
+                <div class="sec info">
+                    <div class="top">
+                        <h3>general info</h3>
+                        <p>general information about your account</p>
+                    </div>
+                    <form action="">
+                        <label name="first" for="first name">first name</label>
+                        <input type="text" id="first" placeholder="first name">
+                        <label for="last name">last name</label>
+                        <input name="last" type="text" id="last" placeholder="last name">
+                        <label for="email">email</label>
+                        <div>
+                            <input name="email" type="email" id="email" placeholder="per@ex" disabled>
+                            <input class="btn" type="button" value="change" >
+                        </div>
+                    </form>
+                </div>
+                <div class="sec security">
+                    <div class="top">
+                        <h3>security info</h3>
+                        <p>security informations about your account</p>
+                    </div>
+                    <div class="box">
+                        <div class="secure">
+                            <div>
+                                <h4>password</h4>
+                                <p>last changed on 13/12/2023</p>
+                            </div>
+                            <input type="button" value="change" class="btn">
+                        </div>
+                        <div class="secure">
+                            <div>
+                                <h4>two-factor authentication</h4>
+                                <p>enable/disable the feature</p>
+                            </div>
+                            <div class="switch"></div>
+                        </div>
+                        <div class="secure">
+                            <div>
+                                <h4>devices</h4>
+                                <p>check the login devices list</p>
+                            </div>
+                            <input type="button" value="devices" class="btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="sec social">
+                    <div class="top">
+                        <h3>social info</h3>
+                        <p>social media information</p>
+                    </div>
+                    <div class="box">
+                        <div class="soc">
+                            <i class="fa-brands fa-twitter"></i>
+                            <input type="text" placeholder="twitter username">
+                        </div>
+                        <div class="soc">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <input type="text" placeholder="facebook username">
+                        </div>
+                        <div class="soc">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <input type="text" placeholder="linkedin username">
+                        </div>
+                        <div class="soc">
+                            <i class="fa-brands fa-youtube"></i>
+                            <input type="text" placeholder="youtube username">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -5,6 +5,17 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --background: #8888882e;
+    --blue-back: #0075ff33;
+    --orange-back: #f59e0b33;
+    --green-back: #22c55e33;
+    --red-back: #ff000033;
+    --blue: #0075ff;
+    --orange: #f59e0b;
+    --green: #22c55e;
+    --red: #f44336;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -205,6 +216,6 @@ li {
 }
 .sections {
     padding: 10px 15px 20px;
-    background-color: #8888882e;
+    background-color: var(--background);
 }
 /* end page  */

@@ -1,0 +1,209 @@
+/* start global  */
+:root {
+    --background: #8888882e;
+    --blue-back: #0075ff33;
+    --orange-back: #f59e0b33;
+    --green-back: #22c55e33;
+    --red-back: #ff000033;
+    --blue: #0075ff;
+    --orange: #f59e0b;
+    --green: #22c55e;
+    --red: #f44336;
+    --main-transition: 0.35s;
+}
+/* end global rules  */
+/* start sections  */
+.sections .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+@media (max-width: 1000px) {
+    .sections .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.sections .container .sec{
+    background-color: white;
+    text-transform: capitalize;
+    padding: 20px;
+}
+.sections .sec .top{
+    margin-bottom: 15px;
+}
+.sections .sec .top h3{
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.sections .sec .top p{
+    font-size: 16px;
+}
+.btn {
+    padding: 5px 15px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid var(--blue);
+    text-transform: capitalize;
+    color: white;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+.switch {
+    position: relative;
+    width: 80px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: var(--background);
+    cursor: pointer;
+    transition: var(--main-transition) ease-in-out;
+}
+.switch::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    transform: translate(40%, 0);
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--background);
+    transition: var(--main-transition) ease-in-out;
+}
+.switch:hover{
+    background-color: var(--blue);
+}
+.switch:hover.switch::before{
+    left: 50%;
+    background-color: white;
+}
+/* end section  */
+/* start control  */
+.sections .control .config{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin-bottom: 30px;
+}
+@media (max-width: 550px) {
+    .sections .control .config{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.sections .control .config h4{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.sections .control .config p{
+    font-size: 14px;
+}
+.sections .control textarea{
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    min-height: 150px;
+    outline: none;
+    border-radius: 8px;
+    border-color: #ddd;
+}
+/* end control  */
+/* start info  */
+.sections .info form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: capitalize;
+}
+.sections .info form label{
+    font-weight: 500;
+}
+.sections .info form input[type="text"]{
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+.sections .info form div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.sections .info form div input[type="email"]{
+    width: 70%;
+    padding: 10px;
+}
+.sections .info form div input[type="email"]:hover{
+    cursor: not-allowed;
+}
+/* end info  */
+/* start security  */
+.sections .security .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.sections .security .box .secure{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.sections .security .box .secure:last-of-type{
+    border: none;
+}
+.sections .security .box .secure div{
+    max-width: 50%;
+}
+.sections .security .box h4{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.sections .security .box p,
+.sections .security .box input{
+    font-size: 14px;
+}
+/* end security  */
+/* start social  */
+.sections .social .box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sections .social .box .soc {
+    display: flex;
+    font-size: 14px;
+}
+.sections .social .box .soc i{
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d5d5d5;
+}
+.sections .social .box .soc input{
+    text-transform: capitalize;
+    padding: 5px;
+    outline: none;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    width: 100%;
+}
+.sections .soc:focus-within.soc i{
+    color: black;
+}
+/* end social  */
