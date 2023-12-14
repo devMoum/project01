@@ -207,3 +207,130 @@
     color: black;
 }
 /* end social  */
+/* start widgets  */
+.sections .widgets .box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sections .widgets .box .check{
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+}
+.sections .widgets .box .check label{
+    cursor: pointer;
+}
+.sections .widgets .box .check input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    position: relative;
+}
+.sections .widgets .box .check input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid ;
+    border-radius: 5px;
+}
+.sections .widgets .box .check i{
+    position: absolute;
+    color: white;
+    left: 4px;
+    font-size: 14px;
+}
+.sections .widgets .box .check input[type="checkbox"]:checked::before{
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+/* end widgets  */
+/* start backup  */
+.sections .backup .box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #ddd;
+    gap: 20px;
+}
+.sections .backup .box .radio{
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.sections .backup .box .radio label{
+    cursor: pointer;
+}
+.sections .backup .box .radio input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    position: relative;
+}
+.sections .backup .box .radio input[type="radio"]::before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.sections .backup .box .radio input[type="radio"]::after{
+    content: "";
+    position: absolute;
+    left: 4px;
+    bottom: 4.5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.sections .backup .box .radio input[type="radio"]:checked::after{
+    background-color: var(--blue);
+}
+.sections .backup .box2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-top: 20px;
+}
+@media (max-width: 750px) {
+    .sections .backup .box2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.sections .backup .box2 .radio{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    gap: 10px;
+    font-weight: 500;
+}
+.sections .backup .box2 .radio input[type="radio"]{
+    appearance: none;
+}
+.sections .backup .box2 .radio input[type="radio"]::after{
+    content: "";
+    position: absolute;
+    left: -1%;
+    bottom: -2%;
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.sections .backup .box2 .radio input[type="radio"]:checked::after{
+    color: var(--blue);
+}
+/* end backup  */
