@@ -183,10 +183,16 @@
 }
 /* end user  */
 /* start skills  */
+.sections .semi_cont .skills{
+    display: flex;
+    flex-direction: column;
+}
 .sections .semi_cont .skills .box{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 15px;
+    height: 100%;
 }
 .sections .semi_cont .skills .box div{
     text-transform: capitalize;
@@ -205,3 +211,49 @@
     border-radius: 8px;
 }
 /* end skills  */
+/* start activities  */
+.sections .semi_cont .activities .activity,
+.sections .semi_cont .activities .activity > div{
+    display: flex;
+    align-items: center;
+}
+.sections .semi_cont .activities .activity{
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--background);
+}
+.sections .semi_cont .activities .activity:last-of-type{
+    border: none;
+    padding-bottom: 0;
+}
+.sections .semi_cont .activities .activity img{
+    width: 60px;
+}
+.sections .semi_cont .activities .activity > div{
+    justify-content: space-between;
+    width: 100%;
+}
+.sections .semi_cont .activities .activity h4{
+    margin-bottom: 5px;
+}
+.sections .semi_cont .activities .activity p{
+    color: #888888;
+    font-size: 15px;
+}
+.sections .semi_cont .activities .activity > div .last{
+    text-align: end;
+}
+@media (max-width: 450px) {
+    .sections .semi_cont .activities .activity,
+    .sections .semi_cont .activities .activity > div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    }
+    .sections .semi_cont .activities .activity > div .last{
+        text-align: center;
+    }
+}
+/* end activities  */
