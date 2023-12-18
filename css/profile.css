@@ -11,6 +11,36 @@
     --red: #f44336;
     --main-transition: 0.35s;
 }
+.sections .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+.sections .semi_cont {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+@media (max-width: 1000px) {
+    .sections .semi_cont {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.sections .container .sec{
+    background-color: white;
+    text-transform: capitalize;
+    padding: 20px;
+}
+.sections .sec .top{
+    margin-bottom: 15px;
+}
+.sections .sec .top h3{
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.sections .sec .top p{
+    font-size: 16px;
+}
 .btn {
     padding: 5px 15px;
     height: 35px;
@@ -114,6 +144,9 @@
     font-weight: 500;
     font-size: 14px;
 }
+.sections .user .info  p{
+    color: #888888;
+}
 .sections .user .info .general{
     border-bottom: 1px solid #ddd;
     padding: 0;
@@ -134,12 +167,6 @@
     gap: 5px;
     margin-bottom: 5px;
 }
-.sections .user .info .general > div div{
-    /* border: solid; */
-}
-.sections .user .info  p{
-    color: #888888;
-}
 .sections .user .info p span{
     color: black;
     font-size: 15px;
@@ -155,3 +182,26 @@
     }
 }
 /* end user  */
+/* start skills  */
+.sections .semi_cont .skills .box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sections .semi_cont .skills .box div{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--background);
+    padding: 5px 0 15px;
+}
+.sections .semi_cont .skills .box div:last-of-type{
+    border: none;
+    padding-bottom: 0;
+}
+.sections .semi_cont .skills .box div span{
+    padding: 5px 10px;
+    background-color: var(--background);
+    border-radius: 8px;
+}
+/* end skills  */
