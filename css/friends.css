@@ -1,0 +1,123 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+@media (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 860px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.container .friend{
+    padding: 20px;
+    background-color: white;
+    text-transform: capitalize;
+}
+.container .friend .top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.container .friend .top > div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    gap: 5px;
+}
+@media (max-width: 500px) {
+    .container .friend .top > div{
+        flex-direction: column;
+        left: -5px;
+    }
+}
+.container .friend .top > div i{
+    background-color: #EEEEEE;
+    color: #888888;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.container .friend .top > div i:hover{
+    background-color: #0075FF;
+    color: white;
+}
+.container .friend .top img{
+    width: 120px;
+    border-radius: 50%;
+}
+.container .friend .top h4{
+    font-size: 16px;
+}
+.container .friend .top p{
+    font-size: 14px;
+}
+/* start mid  */
+.container .friend .mid{
+    padding: 15px 5px;
+    border-bottom: 1px solid #EEEEEE;
+    display: flex;
+    gap: 5px;
+}
+.container .friend .mid div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.container .friend .mid div:first-of-type{
+    align-items: center;
+    margin-right: 5px;
+}
+.container .friend .mid div span {
+    font-size: 14px;
+    font-weight: 500;
+}
+/* start bottom  */
+.container .friend .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+.container .friend .bottom span{
+    font-size: 12px;
+    font-weight: 500;
+    color: #888888;
+}
+.container .friend .bottom div{
+    display: flex;
+    gap: 5px;
+}
+.container .friend .bottom div button{
+    font-size: 12px;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.container .friend .bottom div button:first-of-type{
+    background-color: #0075FF;
+}
+.container .friend .bottom div button:last-of-type{
+    background-color: #F44336;
+}
+

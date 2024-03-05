@@ -1,93 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta name="description" content="controle manager">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- normalize -->
+    <title>FRIENDS</title>
     <link rel="stylesheet" href="../css/normalize.css">
-    <!-- fontawesome  -->
     <link rel="stylesheet" href="../css/all.min.css">
-    <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
-    <!-- main css  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Friends</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../css/friends.css">
+  </head>
+  <body>
     <div class="navbar">
-        <div class="dev_moum">
-            <h3><span>dev_^</span><span>moum</span></h3>
-        </div>
-        <ul class="nav_list">
-            <li>
-                <a href="../index.html">
-                    <i class="fa-solid fa-chart-bar"></i>
-                    <span>dashbord</span>
-                </a>
-            </li>
-            <li>
-                <a href="settings.html">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>settings</span>
-                </a>
-            </li>
-            <li>
-                <a href="profile.html">
-                    <i class="fa-regular fa-user"></i>
-                    <span>profile</span>
-                </a>
-            </li>
-            <li>
-                <a href="projects.html">
-                    <i class="fa-solid fa-code-merge"></i>
-                    <span>projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="courses.html">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <span>courses</span>
-                </a>
-            </li>
-            <li>
-                <a id="sec_on" href="friends.html">
-                    <i class="fa-solid fa-users-line"></i>
-                    <span>friends</span>
-                </a>
-            </li>
-            <li>
-                <a href="files.html">
-                    <i class="fa-regular fa-file"></i>
-                    <span>files</span>
-                </a>
-            </li>
-            <li>
-                <a href="plans.html">
-                    <i class="fa-regular fa-credit-card"></i>
-                    <span>plans</span>
-                </a>
-            </li>
-        </ul>
+      <div class="dev_moum">
+        <h3><span>dev_^</span><span>moum</span></h3>
+      </div>
+      <ul class="nav_list">
+        <li><a id="dashboard" href="../index.html"><i class="fa-solid fa-chart-bar"></i><span>dashboard</span></a>
+        </li>
+        <li><a id="settings" href="settings.html"><i class="fa-solid fa-gear"></i><span>settings</span></a>
+        </li>
+        <li><a id="profile" href="profile.html"><i class="fa-regular fa-user"></i><span>profile</span></a>
+        </li>
+        <li><a id="projects" href="projects.html"><i class="fa-solid fa-code-merge"></i><span>projects</span></a>
+        </li>
+        <li><a id="courses" href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span>courses</span></a>
+        </li>
+        <li><a id="sec_on" href="friends.html"><i class="fa-solid fa-users-line"></i><span>friends</span></a>
+        </li>
+        <li><a id="files" href="files.html"><i class="fa-regular fa-file"></i><span>files</span></a>
+        </li>
+        <li><a id="plans" href="plans.html"><i class="fa-regular fa-credit-card"></i><span>plans</span></a>
+        </li>
+      </ul>
     </div>
-    <div class="page profile">
-        <header>
-            <div class="search_bar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" name="search" placeholder="type a keyword">
-            </div>
-            <div class="logo">
-                <i class="fa-regular fa-bell"></i>
-                <img src="../images/team-01.png" alt="avatar">
-            </div>
-        </header>
-        <div class="sections">
-            <h1 class="page_name">friends</h1>
-            <div class="container">
-                </div>
-            </div>
+    <div class="page friends">
+      <header>
+        <div class="search_bar"><i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" name="search" placeholder="type a keyword">
         </div>
+        <div class="logo"><i class="fa-regular fa-bell"></i><img src="../images/team-01.png" alt="avatar"></div>
+      </header>
+      <div class="sections">
+        <h1 class="page_name">friends</h1>
+        <div class="container">
+          <div class="friend">
+            <div class="top">
+              <div><i class="fa-solid fa-phone"></i><i class="fa-solid fa-envelope"></i></div><img src="../images/friend-01.jpg" alt="">
+              <h4>samy</h4>
+              <p>javaScript dev</p>
+            </div>
+            <div class="mid">
+              <div><i class="fa-regular fa-face-smile"></i><i class="fa-solid fa-diagram-project"></i><i class="fa-regular fa-newspaper"></i></div>
+              <div><span>45</span><span>6</span><span>2</span></div>
+              <div><span>friends</span><span>projects</span><span>articles</span></div>
+            </div>
+            <div class="bottom"><span>joined 24/02/2023</span>
+              <div>
+                <button type="submit">profile</button>
+                <button type="submit">remove</button>
+              </div>
+            </div>
+          </div>
+          <div class="friend">
+            <div class="top">
+              <div><i class="fa-solid fa-phone"></i><i class="fa-solid fa-envelope"></i></div><img src="../images/friend-02.jpg" alt="">
+              <h4>anis</h4>
+              <p>php dev</p>
+            </div>
+            <div class="mid">
+              <div><i class="fa-regular fa-face-smile"></i><i class="fa-solid fa-diagram-project"></i><i class="fa-regular fa-newspaper"></i></div>
+              <div><span>5</span><span>13</span><span>1</span></div>
+              <div><span>friends</span><span>projects</span><span>articles</span></div>
+            </div>
+            <div class="bottom"><span>joined 04/06/2023</span>
+              <div>
+                <button type="submit">profile</button>
+                <button type="submit">remove</button>
+              </div>
+            </div>
+          </div>
+          <div class="friend">
+            <div class="top">
+              <div><i class="fa-solid fa-phone"></i><i class="fa-solid fa-envelope"></i></div><img src="../images/friend-03.jpg" alt="">
+              <h4>midou</h4>
+              <p>python dev</p>
+            </div>
+            <div class="mid">
+              <div><i class="fa-regular fa-face-smile"></i><i class="fa-solid fa-diagram-project"></i><i class="fa-regular fa-newspaper"></i></div>
+              <div><span>75</span><span>66</span><span>11</span></div>
+              <div><span>friends</span><span>projects</span><span>articles</span></div>
+            </div>
+            <div class="bottom"><span>joined 18/11/2023</span>
+              <div>
+                <button type="submit">profile</button>
+                <button type="submit">remove</button>
+              </div>
+            </div>
+          </div>
+          <div class="friend">
+            <div class="top">
+              <div><i class="fa-solid fa-phone"></i><i class="fa-solid fa-envelope"></i></div><img src="../images/friend-04.jpg" alt="">
+              <h4>wahab</h4>
+              <p>javaScript dev</p>
+            </div>
+            <div class="mid">
+              <div><i class="fa-regular fa-face-smile"></i><i class="fa-solid fa-diagram-project"></i><i class="fa-regular fa-newspaper"></i></div>
+              <div><span>7</span><span>67</span><span>17</span></div>
+              <div><span>friends</span><span>projects</span><span>articles</span></div>
+            </div>
+            <div class="bottom"><span>joined 04/02/2023</span>
+              <div>
+                <button type="submit">profile</button>
+                <button type="submit">remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

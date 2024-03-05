@@ -1,93 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta name="description" content="controle manager">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- normalize -->
+    <title>PROJECTS</title>
     <link rel="stylesheet" href="../css/normalize.css">
-    <!-- fontawesome  -->
     <link rel="stylesheet" href="../css/all.min.css">
-    <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
-    <!-- main css  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Projects</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../css/projects.css">
+  </head>
+  <body>
     <div class="navbar">
-        <div class="dev_moum">
-            <h3><span>dev_^</span><span>moum</span></h3>
-        </div>
-        <ul class="nav_list">
-            <li>
-                <a href="../index.html">
-                    <i class="fa-solid fa-chart-bar"></i>
-                    <span>dashbord</span>
-                </a>
-            </li>
-            <li>
-                <a href="settings.html">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>settings</span>
-                </a>
-            </li>
-            <li>
-                <a href="profile.html">
-                    <i class="fa-regular fa-user"></i>
-                    <span>profile</span>
-                </a>
-            </li>
-            <li>
-                <a id="sec_on" href="projects.html">
-                    <i class="fa-solid fa-code-merge"></i>
-                    <span>projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="courses.html">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <span>courses</span>
-                </a>
-            </li>
-            <li>
-                <a href="friends.html">
-                    <i class="fa-solid fa-users-line"></i>
-                    <span>friends</span>
-                </a>
-            </li>
-            <li>
-                <a href="files.html">
-                    <i class="fa-regular fa-file"></i>
-                    <span>files</span>
-                </a>
-            </li>
-            <li>
-                <a href="plans.html">
-                    <i class="fa-regular fa-credit-card"></i>
-                    <span>plans</span>
-                </a>
-            </li>
-        </ul>
+      <div class="dev_moum">
+        <h3><span>dev_^</span><span>moum</span></h3>
+      </div>
+      <ul class="nav_list">
+        <li><a id="dashboard" href="../index.html"><i class="fa-solid fa-chart-bar"></i><span>dashboard</span></a>
+        </li>
+        <li><a id="settings" href="settings.html"><i class="fa-solid fa-gear"></i><span>settings</span></a>
+        </li>
+        <li><a id="profile" href="profile.html"><i class="fa-regular fa-user"></i><span>profile</span></a>
+        </li>
+        <li><a id="sec_on" href="projects.html"><i class="fa-solid fa-code-merge"></i><span>projects</span></a>
+        </li>
+        <li><a id="courses" href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span>courses</span></a>
+        </li>
+        <li><a id="friends" href="friends.html"><i class="fa-solid fa-users-line"></i><span>friends</span></a>
+        </li>
+        <li><a id="files" href="files.html"><i class="fa-regular fa-file"></i><span>files</span></a>
+        </li>
+        <li><a id="plans" href="plans.html"><i class="fa-regular fa-credit-card"></i><span>plans</span></a>
+        </li>
+      </ul>
     </div>
-    <div class="page profile">
-        <header>
-            <div class="search_bar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" name="search" placeholder="type a keyword">
-            </div>
-            <div class="logo">
-                <i class="fa-regular fa-bell"></i>
-                <img src="../images/team-01.png" alt="avatar">
-            </div>
-        </header>
-        <div class="sections">
-            <h1 class="page_name">projects</h1>
-            <div class="container">
+    <div class="page projects">
+      <header>
+        <div class="search_bar"><i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" name="search" placeholder="type a keyword">
+        </div>
+        <div class="logo"><i class="fa-regular fa-bell"></i><img src="../images/team-01.png" alt="avatar"></div>
+      </header>
+      <div class="sections">
+        <h1 class="page_name">projects</h1>
+        <div class="container"> 
+          <div class="project"> 
+            <div class="top">
+              <div>
+                <h3>project1</h3>
+                <p>description</p>
+                <div class="team"> <img src="../images/team-01.png" alt="member"><img src="../images/team-02.png" alt="member"><img src="../images/team-03.png" alt="member">
                 </div>
+              </div><span>30/12/2023</span>
             </div>
+            <div class="mid">
+              <ul> 
+                <li>JavaScript</li>
+                <li>PUGjs</li>
+                <li>SASS</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <div class="progress"></div>
+              <div class="price"><span>$2400</span></div>
+            </div>
+          </div>
+          <div class="project"> 
+            <div class="top">
+              <div>
+                <h3>project2</h3>
+                <p>description</p>
+                <div class="team"> <img src="../images/team-01.png" alt="member"><img src="../images/team-05.png" alt="member">
+                </div>
+              </div><span>20/10/2023</span>
+            </div>
+            <div class="mid">
+              <ul> 
+                <li>JavaScript</li>
+                <li>bootstrap</li>
+                <li>SASS</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <div class="progress"></div>
+              <div class="price"><span>$600</span></div>
+            </div>
+          </div>
+          <div class="project"> 
+            <div class="top">
+              <div>
+                <h3>project3</h3>
+                <p>description</p>
+                <div class="team"> <img src="../images/team-01.png" alt="member"><img src="../images/team-02.png" alt="member"><img src="../images/team-03.png" alt="member"><img src="../images/team-05.png" alt="member">
+                </div>
+              </div><span>24/05/2023</span>
+            </div>
+            <div class="mid">
+              <ul> 
+                <li>JavaScript</li>
+                <li>PUGjs</li>
+                <li>SASS</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <div class="progress"></div>
+              <div class="price"><span>$4200</span></div>
+            </div>
+          </div>
+          <div class="project"> 
+            <div class="top">
+              <div>
+                <h3>project4</h3>
+                <p>description</p>
+                <div class="team"> <img src="../images/team-01.png" alt="member"><img src="../images/team-02.png" alt="member"><img src="../images/team-03.png" alt="member">
+                </div>
+              </div><span>19/09/2023</span>
+            </div>
+            <div class="mid">
+              <ul> 
+                <li>JavaScript</li>
+                <li>html</li>
+                <li>css</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <div class="progress"></div>
+              <div class="price"><span>$200</span></div>
+            </div>
+          </div>
+          <div class="project"> 
+            <div class="top">
+              <div>
+                <h3>project5</h3>
+                <p>description</p>
+                <div class="team"> <img src="../images/team-03.png" alt="member">
+                </div>
+              </div><span>10/07/2023</span>
+            </div>
+            <div class="mid">
+              <ul> 
+                <li>JavaScript</li>
+                <li>PUGjs</li>
+                <li>css</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <div class="progress"></div>
+              <div class="price"><span>$400</span></div>
+            </div>
+          </div>
+          <div class="project"> 
+            <div class="top">
+              <div>
+                <h3>project6</h3>
+                <p>description</p>
+                <div class="team"> <img src="../images/team-02.png" alt="member"><img src="../images/team-03.png" alt="member">
+                </div>
+              </div><span>4/04/2023</span>
+            </div>
+            <div class="mid">
+              <ul> 
+                <li>php</li>
+                <li>PUGjs</li>
+                <li>SASS</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <div class="progress"></div>
+              <div class="price"><span>$1900</span></div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

@@ -1,253 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta name="description" content="controle manager">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- normalize -->
+    <title>SETTINGS</title>
     <link rel="stylesheet" href="../css/normalize.css">
-    <!-- fontawesome  -->
     <link rel="stylesheet" href="../css/all.min.css">
-    <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
-    <!-- main css  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <!-- settings css  -->
     <link rel="stylesheet" href="../css/settings.css">
-    <title>Settings</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <div class="dev_moum">
-            <h3><span>dev_^</span><span>moum</span></h3>
-        </div>
-        <ul class="nav_list">
-            <li>
-                <a href="../index.html">
-                    <i class="fa-solid fa-chart-bar"></i>
-                    <span>dashbord</span>
-                </a>
-            </li>
-            <li>
-                <a id="sec_on" href="settings.html">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>settings</span>
-                </a>
-            </li>
-            <li>
-                <a href="profile.html">
-                    <i class="fa-regular fa-user"></i>
-                    <span>profile</span>
-                </a>
-            </li>
-            <li>
-                <a href="projects.html">
-                    <i class="fa-solid fa-code-merge"></i>
-                    <span>projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="courses.html">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <span>courses</span>
-                </a>
-            </li>
-            <li>
-                <a href="friends.html">
-                    <i class="fa-solid fa-users-line"></i>
-                    <span>friends</span>
-                </a>
-            </li>
-            <li>
-                <a href="files.html">
-                    <i class="fa-regular fa-file"></i>
-                    <span>files</span>
-                </a>
-            </li>
-            <li>
-                <a href="plans.html">
-                    <i class="fa-regular fa-credit-card"></i>
-                    <span>plans</span>
-                </a>
-            </li>
-        </ul>
+      <div class="dev_moum">
+        <h3><span>dev_^</span><span>moum</span></h3>
+      </div>
+      <ul class="nav_list">
+        <li><a id="dashboard" href="../index.html"><i class="fa-solid fa-chart-bar"></i><span>dashboard</span></a>
+        </li>
+        <li><a id="sec_on" href="settings.html"><i class="fa-solid fa-gear"></i><span>settings</span></a>
+        </li>
+        <li><a id="profile" href="profile.html"><i class="fa-regular fa-user"></i><span>profile</span></a>
+        </li>
+        <li><a id="projects" href="projects.html"><i class="fa-solid fa-code-merge"></i><span>projects</span></a>
+        </li>
+        <li><a id="courses" href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span>courses</span></a>
+        </li>
+        <li><a id="friends" href="friends.html"><i class="fa-solid fa-users-line"></i><span>friends</span></a>
+        </li>
+        <li><a id="files" href="files.html"><i class="fa-regular fa-file"></i><span>files</span></a>
+        </li>
+        <li><a id="plans" href="plans.html"><i class="fa-regular fa-credit-card"></i><span>plans</span></a>
+        </li>
+      </ul>
     </div>
     <div class="page settings">
-        <header>
-            <div class="search_bar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" name="search" placeholder="type a keyword">
-            </div>
-            <div class="logo">
-                <i class="fa-regular fa-bell"></i>
-                <img src="../images/team-01.png" alt="avatar">
-            </div>
-        </header>
-        <div class="sections">
-            <h1 class="page_name">settings</h1>
-            <div class="container">
-                <div class="sec control">
-                    <div class="top">
-                        <h3>site control</h3>
-                        <p>control the website if there is maintenance</p>
-                    </div>
-                    <div class="config">
-                        <div>
-                            <h4>website control</h4>
-                            <p>open/close website and type the reason</p>
-                        </div>
-                        <div class="switch control-switch"></div>
-                    </div>
-                    <textarea name="close" placeholder="close message content.."></textarea>
-                </div>
-                <div class="sec info">
-                    <div class="top">
-                        <h3>general info</h3>
-                        <p>general information about your account</p>
-                    </div>
-                    <form action="">
-                        <label name="first" for="first name">first name</label>
-                        <input type="text" id="first" placeholder="first name">
-                        <label for="last name">last name</label>
-                        <input name="last" type="text" id="last" placeholder="last name">
-                        <label for="email">email</label>
-                        <div>
-                            <input name="email" type="email" id="email" placeholder="per@ex" disabled>
-                            <input class="btn" type="button" value="change" >
-                        </div>
-                    </form>
-                </div>
-                <div class="sec security">
-                    <div class="top">
-                        <h3>security info</h3>
-                        <p>security informations about your account</p>
-                    </div>
-                    <div class="box">
-                        <div class="secure">
-                            <div>
-                                <h4>password</h4>
-                                <p>last changed on 13/12/2023</p>
-                            </div>
-                            <input type="button" value="change" class="btn">
-                        </div>
-                        <div class="secure">
-                            <div>
-                                <h4>two-factor authentication</h4>
-                                <p>enable/disable the feature</p>
-                            </div>
-                            <div class="switch"></div>
-                        </div>
-                        <div class="secure">
-                            <div>
-                                <h4>devices</h4>
-                                <p>check the login devices list</p>
-                            </div>
-                            <input type="button" value="devices" class="btn">
-                        </div>
-                    </div>
-                </div>
-                <div class="sec social">
-                    <div class="top">
-                        <h3>social info</h3>
-                        <p>social media information</p>
-                    </div>
-                    <div class="box">
-                        <div class="soc">
-                            <i class="fa-brands fa-twitter"></i>
-                            <input type="text" placeholder="twitter username">
-                        </div>
-                        <div class="soc">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <input type="text" placeholder="facebook username">
-                        </div>
-                        <div class="soc">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <input type="text" placeholder="linkedin username">
-                        </div>
-                        <div class="soc">
-                            <i class="fa-brands fa-youtube"></i>
-                            <input type="text" placeholder="youtube username">
-                        </div>
-                    </div>
-                </div>
-                <div class="sec widgets">
-                    <div class="top">
-                        <h3>widgets control</h3>
-                        <p>show/hide widgets</p>
-                    </div>
-                    <div class="box">
-                        <div class="check">
-                            <input type="checkbox" name="one" id="one" checked>
-                            <i class="fa-solid fa-check"></i>
-                            <label for="one">quick draft</label>
-                        </div>
-                        <div class="check">
-                            <input type="checkbox" name="two" id="two" checked>
-                            <i class="fa-solid fa-check"></i>
-                            <label for="two">yearly targets</label>
-                        </div>
-                        <div class="check">
-                            <input type="checkbox" name="three" id="three" checked>
-                            <i class="fa-solid fa-check"></i>
-                            <label for="three">tickets statistics</label>
-                        </div>
-                        <div class="check">
-                            <input type="checkbox" name="four" id="four" checked>
-                            <i class="fa-solid fa-check"></i>
-                            <label for="four">latest news</label>
-                        </div>
-                        <div class="check">
-                            <input type="checkbox" name="five" id="five">
-                            <i class="fa-solid fa-check"></i>
-                            <label for="five">latest tasks</label>
-                        </div>
-                        <div class="check">
-                            <input type="checkbox" name="six" id="six">
-                            <i class="fa-solid fa-check"></i>
-                            <label for="six">top search items</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="sec backup">
-                    <div class="top">
-                        <h3>backup manager</h3>
-                        <p>control backup time and location</p>
-                    </div>
-                    <div class="box">
-                        <div class="radio">
-                            <input type="radio" id="rad01" name="rad" checked>
-                            <label for="rad01">daily</label>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" id="rad02" name="rad">
-                            <label for="rad02">weekly</label>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" id="rad03" name="rad">
-                            <label for="rad03">monthly</label>
-                        </div>
-                    </div>
-                    <div class="box2">
-                        <div class="radio">
-                            <input type="radio" id="rad21" name="rad2">
-                            <i class="fa-solid fa-server"></i>
-                            <label for="rad21">server x</label>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" id="rad22" name="rad2" checked>
-                            <i class="fa-solid fa-server"></i>
-                            <label for="rad22">server y</label>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" id="rad23" name="rad2">
-                            <i class="fa-solid fa-server"></i>
-                            <label for="rad23">server z</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <header>
+        <div class="search_bar"><i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" name="search" placeholder="type a keyword">
         </div>
+        <div class="logo"><i class="fa-regular fa-bell"></i><img src="../images/team-01.png" alt="avatar"></div>
+      </header>
+      <div class="sections">
+        <h1 class="page_name">settings</h1>
+        <div class="container">
+          <div class="sec control">
+            <div class="top">
+              <h3>site control</h3>
+              <p>control the website if there is maintenance</p>
+            </div>
+            <div class="config">
+              <div>
+                <h4>website control</h4>
+                <p>open/close website and type the reason</p>
+              </div>
+              <div class="switch control-switch"></div>
+            </div>
+            <textarea name="close" placeholder="close message content.."></textarea>
+          </div>
+          <div class="sec info">
+            <div class="top">
+              <h3>general info</h3>
+              <p>general information about your account</p>
+            </div>
+            <form action="">
+              <label name="first" for="first name">first name</label>
+              <input type="text" id="first" placeholder="first name">
+              <label for="last name">last name</label>
+              <input name="last" type="text" id="last" placeholder="last name">
+              <label for="email">email</label>
+              <div>
+                <input name="email" type="email" id="email" placeholder="per@ex" disabled>
+                <input class="btn" type="button" value="change">
+              </div>
+            </form>
+          </div>
+          <div class="sec security">
+            <div class="top">
+              <h3>security info</h3>
+              <p>security informations about your account</p>
+            </div>
+            <div class="box">
+              <div class="secure">
+                <div>
+                  <h4>password</h4>
+                  <p>last changed on 13/12/2023</p>
+                </div>
+                <input class="btn" type="button" value="change">
+              </div>
+              <div class="secure">
+                <div>
+                  <h4>two-factor authentication</h4>
+                  <p>enable/disable the feature</p>
+                </div>
+                <div class="switch"></div>
+              </div>
+              <div class="secure">
+                <div>
+                  <h4>devices</h4>
+                  <p>check the login devices list</p>
+                </div>
+                <input class="btn" type="button" value="devices">
+              </div>
+            </div>
+          </div>
+          <div class="sec social">
+            <div class="top"><h3>social info</h3>
+<p>social media information</p>
+            </div>
+            <div class="box">
+              <div class="soc"><i class="fa-brands fa-twitter"></i>
+                <input type="text" placeholder="twitter username">
+              </div>
+              <div class="soc"><i class="fa-brands fa-facebook-f"></i>
+                <input type="text" placeholder="facebook username">
+              </div>
+              <div class="soc"><i class="fa-brands fa-linkedin"></i>
+                <input type="text" placeholder="linkedin username">
+              </div>
+              <div class="soc"><i class="fa-brands fa-youtube"></i>
+                <input type="text" placeholder="youtube username">
+              </div>
+            </div>
+          </div>
+          <div class="sec widgets">
+            <div class="top">
+              <h3>widgets control</h3>
+              <p>show/hide widgets</p>
+            </div>
+            <div class="box">
+              <div class="check">
+                <input type="checkbox" name="0" id="0"><i class="fa-solid fa-check"></i>
+                <label for="0">quick draft</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="1" id="1"><i class="fa-solid fa-check"></i>
+                <label for="1">yearly targets</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="2" id="2"><i class="fa-solid fa-check"></i>
+                <label for="2">tickets statistics</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="3" id="3"><i class="fa-solid fa-check"></i>
+                <label for="3">latest news</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="4" id="4"><i class="fa-solid fa-check"></i>
+                <label for="4">latest tasks</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="5" id="5"><i class="fa-solid fa-check"></i>
+                <label for="5">top search items</label>
+              </div>
+            </div>
+          </div>
+          <div class="sec backup">
+            <div class="top">
+              <h3>backup manager</h3>
+              <p>control backup time and location</p>
+            </div>
+            <div class="box">
+              <div class="radio">
+                <input type="radio" id="rad0" name="rad" checked>
+                <label for="rad0">daily</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="rad1" name="rad" checked>
+                <label for="rad1">weekly</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="rad2" name="rad" checked>
+                <label for="rad2">monthly</label>
+              </div>
+            </div>
+            <div class="box2">
+              <div class="radio">
+                <input type="radio" id="rad20" name="rad2"><i class="fa-solid fa-server"></i>
+                <label for="rad20">europe</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="rad21" name="rad2"><i class="fa-solid fa-server"></i>
+                <label for="rad21">africa</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="rad22" name="rad2"><i class="fa-solid fa-server"></i>
+                <label for="rad22">asia</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

@@ -1,0 +1,17 @@
+-
+    if(pageName == "dashboard"){
+        var path = "";
+    }else {
+        var path = "../";
+    }
+//- normalize css file 
+link(rel="stylesheet", href= path +"css/normalize.css")
+//- fontawesome lib 
+link(rel="stylesheet", href= path +"css/all.min.css")
+//- google font 
+link(rel="preconnect", href="https://fonts.googleapis.com")
+link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+link(href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&display=swap" rel="stylesheet")
+//- main css 
+link(rel="stylesheet", href= path +"css/main.css")
+link(rel="stylesheet", href= path +"css/"+pageName+".css")

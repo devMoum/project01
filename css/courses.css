@@ -1,0 +1,71 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+@media (max-width:1100px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:1000px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.container .course{
+    max-width: 400px;
+    background-color: white;
+    text-transform: capitalize;
+}
+.container .course .top {
+    position: relative;
+}
+.container .course .top > img{
+    width: 100%;
+}
+.container .course .top .avatar{
+    width: 55px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+/* start mid  */
+.container .course .mid {
+    padding: 20px 15px;
+    /* height: 40%; */
+}
+.container .course .mid h4{
+    font-size: 16px;
+}
+.container .course .mid p{
+    font-size: 14px;
+    color: #888888;
+}
+/* start bottom  */
+.container .course .bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    padding: 20px 15px;
+    border-top: 1px solid #EEEEEE;
+}
+.container .course .bottom button{
+    position: absolute;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 0;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0075FF;
+    color: white;
+    font-size: 14px;
+    text-transform: capitalize;
+}

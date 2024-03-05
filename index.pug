@@ -1,0 +1,376 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="description" content="controle manager")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        block pageName 
+            - var pageName = "dashboard";
+        title= pageName.toUpperCase()
+        include includes/style.pug
+    body
+        .navbar
+            .dev_moum
+                h3
+                    span dev_^
+                    span moum
+            ul.nav_list
+                -
+                    var pagesList = {
+                        "dashboard": 'fa-solid fa-chart-bar',
+                        "settings": 'fa-solid fa-gear',
+                        "profile": 'fa-regular fa-user',
+                        "projects": 'fa-solid fa-code-merge',
+                        "courses": 'fa-solid fa-graduation-cap',
+                        "friends": 'fa-solid fa-users-line',
+                        "files": 'fa-regular fa-file',
+                        "plans": 'fa-regular fa-credit-card'
+                    };
+                    var pages = Object.keys(pagesList);
+                    var pages2 = Object.keys(pagesList);
+                each val , index in pages
+                    li
+                        -
+                            var vip =val;
+                            var pathp = "pages/";
+                            if(val == pageName && val == "dashboard"){
+                                val = "index";
+                                vip = "sec_on";
+                                pathp = "";
+                            }else if(val == "dashboard"){
+                                val = "index";
+                                pathp = "../";
+                            }else if(val == pageName && val != "dashboard"){
+                                vip = "sec_on";
+                                pathp = "";
+                            }else if( val != "dashboard" && pageName != "dashboard"){
+                                pathp = "";
+                            }
+                        a(id= vip, href=pathp+ val + ".html")
+                            i(class= pagesList[pages[index]])
+                            span=pages2[index]
+        div(class="page " + pageName)
+            header
+                .search_bar
+                    i(class="fa-solid fa-magnifying-glass")
+                    input(type="search" name="search" placeholder="type a keyword") 
+                .logo
+                    i( class="fa-regular fa-bell")
+                    img( src=path +"images/team-01.png" alt="avatar")
+            .sections
+                h1.page_name= pageName
+                block page content
+                    .container
+                        div(class="sec welcome")
+                            .top
+                                .title
+                                    h3 welcome
+                                    p to dev moum
+                                img(src="images/welcome.png" alt="")
+                            .box
+                                img(src="images/team-01.png" alt="avatar")
+                                .stats
+                                    .stat
+                                        h4 moumou
+                                        p developer
+                                    .stat
+                                        h4 projects
+                                        p 24
+                                    .stat
+                                        h4 $6500
+                                        p earned
+                                a( class="btn" href="pages/profile.html") profile
+                        div(class="sec draft")
+                            .top
+                                h3 quick draft
+                                p write a draft for your ideas 
+                            .box
+                                input(
+                                    type="text", 
+                                    placeholder="title", 
+                                    name="title"
+                                )
+                                textarea(
+                                    name="draft", 
+                                    id="draft", 
+                                    placeholder="write here ..."
+                                )
+                                input(
+                                    class="btn", 
+                                    type="submit", 
+                                    name="save", 
+                                    value="save"
+                                )
+                        div(class="sec targets")
+                            .top
+                                h3 yearly targets
+                                p targets of the year
+                            .box
+                                div(class="stat stat1")
+                                    i(class="fa-solid fa-dollar-sign")
+                                    div(class="lvl money")
+                                        p money
+                                        h3 $20.000
+                                        span 80
+                                div(class="stat stat2")
+                                    i(class="fa-solid fa-code")
+                                    div(class="lvl proj")
+                                        p projects
+                                        h3 24
+                                        span 67
+                                div(class="stat stat3")
+                                    i(class="fa-solid fa-user")
+                                    div(class="lvl team")
+                                        p team
+                                        h 37
+                                        span 75
+                        div(class="sec tickets")
+                            .top
+                                h3 tickets statistics
+                                p everything about support tickets :
+                            .box
+                                div(class="stat total")
+                                    i(class="fa-solid fa-table-list")
+                                    h3 2000
+                                    p total
+                                div(class="stat pending")
+                                    i(class="fa-solid fa-spinner")
+                                    h3 1000
+                                    p pending
+                                div(class="stat closed")
+                                    i(class="fa-regular fa-circle-check")
+                                    h3 450
+                                    p closed
+                                div(class="stat deleted")
+                                    i(class="fa-regular fa-circle-xmark")
+                                    h3 550
+                                    p deleted
+                        div(class="sec news")
+                            h3 latest news
+                            .box
+                                -
+                                    var newsList = {
+                                        'new1': 'Lorem ipsum dolor sit amet,',
+                                        'new2': 'Lorem ipsum dolor sit amet,',
+                                        'new3': 'Lorem ipsum dolor sit amet,',
+                                        'new4': 'Lorem ipsum dolor sit amet,'
+                                    };
+                                    var news = Object.keys(newsList);
+                                each val, index in news
+                                    .new
+                                        img(src="images/news-" + index +".png" alt="desk")
+                                        .text
+                                            h4= val
+                                            p= newsList[val] 
+                                            span #{1+index} days ago
+                        div(class="sec tasks")
+                            h3 latest tasks
+                            .box
+                                -
+                                    var taskList = {
+                                        'record video':'Lorem ipsum dolor sit amet',
+                                        'write article':'Lorem ipsum dolor sit amet',
+                                        'finish project':'Lorem ipsum dolor sit amet',
+                                        'attend the meeting':'Lorem ipsum dolor sit amet',
+                                        'finish the lesson':'Lorem ipsum dolor sit amet'
+                                    };
+                                    var tasks = Object.keys(taskList);
+                                each val, index in tasks 
+                                    -
+                                        var tclass = "task";
+                                        index == tasks.length - 1 ? tclass = "task done": tclass;
+                                    div(class= tclass)
+                                        h4= val
+                                        p Lorem ipsum dolor sit amet
+                                        i(class="fa-regular fa-trash-can")
+                        div(class="sec items")
+                            h3 top search items
+                            .box
+                                -
+                                    var itemsList = {
+                                        keyword: 'search count',
+                                        'programming': 232,
+                                        'javascript': 192,
+                                        'php': 170,
+                                        'code': 123,
+                                        'design': 61,
+                                        'logic': 33
+                                    };
+                                    var items = Object.keys(itemsList);
+                                each val, index in items
+                                    .item
+                                        p= val
+                                        span= itemsList[val]
+                        div(class="sec uploads")
+                            h3 latest uploads
+                            .box
+                                -
+                                    var filesList = {
+                                        'moumou': ['pdf', 2.8],
+                                        'user': ['eps', 3.8],
+                                        'admin': ['dll', 1.4],
+                                        'dergana': ['avi', 4.3],
+                                        'zizou': ['psd', 7],
+                                        'obama': ['zip', 11.4]
+                                    };
+                                    var files = Object.keys(filesList);
+                                each val, index in files
+                                    .file
+                                        img(src="images/"+ filesList[val][0] +".svg" alt="file")
+                                        .desc
+                                            h4 file.#{filesList[val][0]}
+                                            p= val
+                                            span #{filesList[val][1]}.mb
+                        div(class="sec progress")
+                            h3 last project progress
+                            .box
+                                div(class="proj done")
+                                    p got the project
+                                div(class="proj done")
+                                    p started the project
+                                div(class="proj done")
+                                    p the project about to finish
+                                div(class="proj pend")
+                                    p test the project
+                                div(class="proj")
+                                    p finish the project & get money
+                                img(src="images/project.png" alt="rocket")
+                        div(class="sec reminders")
+                            h3 reminders
+                            .box
+                                div(class="task blue")
+                                    h4 check my tasks list
+                                    p 05/12/2023 - 06:00pm
+                                div(class="task green")
+                                    h4 check my projects
+                                    p 05/12/2023 - 08:20pm
+                                div(class="task orange")
+                                    h4 call my clients
+                                    p 05/12/2023 - 10:00pm
+                                div(class="task red")
+                                    h4 finish l3obli
+                                    p 05/12/2023 - 12:00pm
+                        div(class="sec post")
+                            h3 latest post
+                            div(class="top")
+                                <img src="images/team-01.png" alt="avatar">
+                                div
+                                    h4 dev_^moum
+                                    p about 2 hours ago
+                            div(class="box")
+                                p are things better or worse the second time around ? can we really do anything more than once ?
+                            div(class="bottom")
+                                div(class="likes")
+                                    i(class="fa-regular fa-heart")
+                                    p 2.7k
+                                div(class="comments")
+                                    i(class="fa-regular fa-comments")
+                                    p 667
+                        div(class="sec social")
+                            h3 social media stats
+                            .box
+                                div(class="stat blue")
+                                    i(class="fa-brands fa-facebook-f")
+                                    div
+                                        p
+                                            span
+                                            |1m like
+                                        a(href="") like
+                                div(class="stat red")
+                                    i(class="fa-brands fa-youtube")
+                                    div
+                                        p
+                                            span
+                                            |3m sub
+                                        a(href="") subscribe
+                                div(class="stat orange")
+                                    i(class="fa-brands fa-instagram")
+                                    div
+                                        p
+                                            span
+                                            |334k like
+                                        a(href="") like
+                                div(class="stat green")
+                                    i(class="fa-brands fa-github")
+                                    div
+                                        p
+                                            span
+                                            |667k
+                                        a(href="") mouah
+                    div(class="projects")
+                        h3 projects
+                        div
+                            table
+                                thead
+                                    tr
+                                        th name
+                                        th finish date
+                                        th client
+                                        th price
+                                        th team
+                                        th status
+                                tbody
+                                    -
+                                        var projTable = {
+                                            //- project: [
+                                            //-     'finish date',
+                                            //-     'client',
+                                            //-     'price',
+                                            //-     'team',
+                                            //-     'status'
+                                            //- ],
+                                            "portfolio": [
+                                                '24/02/2024',
+                                                'dehina',
+                                                2100,
+                                                [1,2,3],
+                                                'comp'
+                                            ],
+                                            "project x": [
+                                                '19/12/2023',
+                                                'dergana',
+                                                20,
+                                                [2],
+                                                'comp'
+                                            ],
+                                            "ai forum": [
+                                                '11/06/2023',
+                                                'anis',
+                                                1700,
+                                                [3],
+                                                'comp'
+                                            ],
+                                            "ljam3iya": [
+                                                '04/08/2024',
+                                                'moh',
+                                                5,
+                                                [1],
+                                                'progress'
+                                            ],
+                                            "workshop": [
+                                                '26/12/2023',
+                                                'manini',
+                                                800,
+                                                [3,5,1,2],
+                                                'rej'
+                                            ],
+                                            "store": [
+                                                '14/09/2024',
+                                                'ran',
+                                                500,
+                                                [1,2],
+                                                'pend'
+                                            ]
+                                        }
+                                        var projects = Object.keys(projTable);
+                                    each proj, index in projects
+                                        tr
+                                            td #{proj}
+                                            td #{projTable[proj][0]}
+                                            td #{projTable[proj][1]}
+                                            td $#{projTable[proj][2]}
+                                            td.team
+                                                each emp, index in projTable[proj][3]
+                                                    img(src="images/team-0"+emp+".png" alt="avatar")
+                                            td(class="status "+ projTable[proj][4])
+                                                span #{projTable[proj][4]}

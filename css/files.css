@@ -1,0 +1,181 @@
+.container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+.container .files_stats{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    min-width: 260px;
+    height: 430px;
+}
+.container .files_stats h3{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+@media (max-width: 800px) {
+    .container .files_stats h3{
+        text-align: center;
+    }
+}
+.container .files_stats .mid{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 20px;
+}
+.container .files_stats .mid .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+}
+.container .files_stats .mid .box i{
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pdf{
+    background-color: #0075ff33;
+    color: #0075FF;
+}
+#images{
+    background-color: #22c55e33;
+    color: #22c55e;
+}
+#csv{
+    background-color: #fdd9d7;
+    color: #f44336;
+}
+#zipper{
+    background-color: #fdecce;
+    color: #f59e0b;
+}
+.container .files_stats .mid .box > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container .files_stats .mid .box > div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container .files_stats .mid .box div h5{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.container .files_stats .mid .box div p{
+    font-size: 12px;
+    color: #888888;
+}
+.container .files_stats .mid .box span{
+    font-size: 12px;
+    font-weight: 500;
+    color: #888888;
+}
+.container .files_stats .bottom{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .files_stats button{
+    text-transform: capitalize;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0075FF;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.container .files_stats button i{
+    margin-right: 5px;
+    transition: 0.3s;
+}
+.container .files_stats button:hover i{
+    transform: translateY(-25%);
+}
+/* start files boxes  */
+.container .files{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+@media (max-width: 1200px) {
+    .container .files{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 1000px) {
+    .container .files{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 880px) {
+    .container .files{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.container .files .file{
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+/* start top  */
+.container .files .file .top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.container .files .file .top i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #888888;
+}
+.container .files .file .top img{
+    width: 60px;
+    transition: 0.3s;
+}
+.container .files .file:hover .top img{
+    transform: rotate(5deg);
+}
+.container .files .file .top h5{
+    font-size: 16px;
+}
+/* start mid  */
+.container .files .file .mid {
+    padding: 5px 0;
+}
+.container .files .file .mid p{
+    font-size: 14px;
+    color: #888888;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px;
+    border-bottom: 1px solid #EEEEEE;
+}
+/* start bottom  */
+.container .files .file .bottom {
+    display: flex;
+    justify-content: space-between;
+    color: #888888;
+    font-size: 14px;
+    padding: 10px 0;
+}

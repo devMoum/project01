@@ -1,0 +1,71 @@
+extends ../index
+
+block pageName 
+    - pageName = "projects";
+
+block page content
+    .container 
+        -
+            var projectsList = {
+                project1: [
+                    "description",
+                    "30/12/2023",
+                    [1,2,3],
+                    ["JavaScript","PUGjs","SASS"],
+                    2400
+                ],
+                project2: [
+                    "description",
+                    "20/10/2023",
+                    [1,5],
+                    ["JavaScript","bootstrap","SASS"],
+                    600
+                ],
+                project3: [
+                    "description",
+                    "24/05/2023",
+                    [1,2,3,5],
+                    ["JavaScript","PUGjs","SASS"],
+                    4200
+                ],
+                project4: [
+                    "description",
+                    "19/09/2023",
+                    [1,2,3],
+                    ["JavaScript","html","css"],
+                    200
+                ],
+                project5: [
+                    "description",
+                    "10/07/2023",
+                    [3],
+                    ["JavaScript","PUGjs","css"],
+                    400
+                ],
+                project6: [
+                    "description",
+                    "4/04/2023",
+                    [2,3],
+                    ["php","PUGjs","SASS"],
+                    1900
+                ],
+            };
+            var projects = Object.keys(projectsList);
+        each proj, index in projects
+            .project 
+                .top
+                    div
+                        h3= proj
+                        p= projectsList[proj][0]
+                        .team 
+                            each m, index in projectsList[proj][2]
+                                img(src="../images/team-0"+m+".png", alt="member")
+                    span= projectsList[proj][1]
+                .mid
+                    ul 
+                        each tech, index in projectsList[proj][3]
+                            li= tech                        
+                .bottom
+                    .progress
+                    .price
+                        span $#{projectsList[proj][4]}

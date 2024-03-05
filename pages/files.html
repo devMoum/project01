@@ -1,93 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta name="description" content="controle manager">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- normalize -->
+    <title>FILES</title>
     <link rel="stylesheet" href="../css/normalize.css">
-    <!-- fontawesome  -->
     <link rel="stylesheet" href="../css/all.min.css">
-    <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
-    <!-- main css  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Files</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../css/files.css">
+  </head>
+  <body>
     <div class="navbar">
-        <div class="dev_moum">
-            <h3><span>dev_^</span><span>moum</span></h3>
-        </div>
-        <ul class="nav_list">
-            <li>
-                <a href="../index.html">
-                    <i class="fa-solid fa-chart-bar"></i>
-                    <span>dashbord</span>
-                </a>
-            </li>
-            <li>
-                <a href="settings.html">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>settings</span>
-                </a>
-            </li>
-            <li>
-                <a href="profile.html">
-                    <i class="fa-regular fa-user"></i>
-                    <span>profile</span>
-                </a>
-            </li>
-            <li>
-                <a href="projects.html">
-                    <i class="fa-solid fa-code-merge"></i>
-                    <span>projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="courses.html">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <span>courses</span>
-                </a>
-            </li>
-            <li>
-                <a href="friends.html">
-                    <i class="fa-solid fa-users-line"></i>
-                    <span>friends</span>
-                </a>
-            </li>
-            <li>
-                <a id="sec_on" href="files.html">
-                    <i class="fa-regular fa-file"></i>
-                    <span>files</span>
-                </a>
-            </li>
-            <li>
-                <a href="plans.html">
-                    <i class="fa-regular fa-credit-card"></i>
-                    <span>plans</span>
-                </a>
-            </li>
-        </ul>
+      <div class="dev_moum">
+        <h3><span>dev_^</span><span>moum</span></h3>
+      </div>
+      <ul class="nav_list">
+        <li><a id="dashboard" href="../index.html"><i class="fa-solid fa-chart-bar"></i><span>dashboard</span></a>
+        </li>
+        <li><a id="settings" href="settings.html"><i class="fa-solid fa-gear"></i><span>settings</span></a>
+        </li>
+        <li><a id="profile" href="profile.html"><i class="fa-regular fa-user"></i><span>profile</span></a>
+        </li>
+        <li><a id="projects" href="projects.html"><i class="fa-solid fa-code-merge"></i><span>projects</span></a>
+        </li>
+        <li><a id="courses" href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span>courses</span></a>
+        </li>
+        <li><a id="friends" href="friends.html"><i class="fa-solid fa-users-line"></i><span>friends</span></a>
+        </li>
+        <li><a id="sec_on" href="files.html"><i class="fa-regular fa-file"></i><span>files</span></a>
+        </li>
+        <li><a id="plans" href="plans.html"><i class="fa-regular fa-credit-card"></i><span>plans</span></a>
+        </li>
+      </ul>
     </div>
-    <div class="page profile">
-        <header>
-            <div class="search_bar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" name="search" placeholder="type a keyword">
-            </div>
-            <div class="logo">
-                <i class="fa-regular fa-bell"></i>
-                <img src="../images/team-01.png" alt="avatar">
-            </div>
-        </header>
-        <div class="sections">
-            <h1 class="page_name">files</h1>
-            <div class="container">
-                </div>
-            </div>
+    <div class="page files">
+      <header>
+        <div class="search_bar"><i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" name="search" placeholder="type a keyword">
         </div>
+        <div class="logo"><i class="fa-regular fa-bell"></i><img src="../images/team-01.png" alt="avatar"></div>
+      </header>
+      <div class="sections">
+        <h1 class="page_name">files</h1>
+        <div class="container">
+          <div class="files">
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/pdf.svg" alt="">
+                <h5>cv.pdf</h5>
+              </div>
+              <div class="mid">
+                <p>samy</p>
+              </div>
+              <div class="bottom"><span>02/03/2023</span><span>1.2MB</span></div>
+            </div>
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/psd.svg" alt="">
+                <h5>file.psd</h5>
+              </div>
+              <div class="mid">
+                <p>anis</p>
+              </div>
+              <div class="bottom"><span>22/02/2023</span><span>6.1MB</span></div>
+            </div>
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/dll.svg" alt="">
+                <h5>file.dll</h5>
+              </div>
+              <div class="mid">
+                <p>midou</p>
+              </div>
+              <div class="bottom"><span>16/02/2023</span><span>0.6MB</span></div>
+            </div>
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/avi.svg" alt="">
+                <h5>file.avi</h5>
+              </div>
+              <div class="mid">
+                <p>abdou</p>
+              </div>
+              <div class="bottom"><span>12/02/2023</span><span>1.9MB</span></div>
+            </div>
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/eps.svg" alt="">
+                <h5>file.eps</h5>
+              </div>
+              <div class="mid">
+                <p>zak</p>
+              </div>
+              <div class="bottom"><span>08/01/2023</span><span>2.4MB</span></div>
+            </div>
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/avi.svg" alt="">
+                <h5>file2.avi</h5>
+              </div>
+              <div class="mid">
+                <p>zak</p>
+              </div>
+              <div class="bottom"><span>08/01/2023</span><span>2.4MB</span></div>
+            </div>
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/psd.svg" alt="">
+                <h5>file2.psd</h5>
+              </div>
+              <div class="mid">
+                <p>moum</p>
+              </div>
+              <div class="bottom"><span>08/01/2023</span><span>2.4MB</span></div>
+            </div>
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/eps.svg" alt="">
+                <h5>file2.eps</h5>
+              </div>
+              <div class="mid">
+                <p>moum</p>
+              </div>
+              <div class="bottom"><span>08/01/2023</span><span>2.4MB</span></div>
+            </div>
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/psd.svg" alt="">
+                <h5>file4.psd</h5>
+              </div>
+              <div class="mid">
+                <p>wahab</p>
+              </div>
+              <div class="bottom"><span>08/01/2023</span><span>2.4MB</span></div>
+            </div>
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/zip.svg" alt="">
+                <h5>file3.zip</h5>
+              </div>
+              <div class="mid">
+                <p>moum</p>
+              </div>
+              <div class="bottom"><span>08/01/2023</span><span>2.4MB</span></div>
+            </div>
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/pdf.svg" alt="">
+                <h5>file7.pdf</h5>
+              </div>
+              <div class="mid">
+                <p>zak</p>
+              </div>
+              <div class="bottom"><span>08/01/2023</span><span>3.4MB</span></div>
+            </div>
+            <div class="file">
+              <div class="top"><i class="fa-solid fa-download"></i><img src="../images/pdf.svg" alt="">
+                <h5>file4.pdf</h5>
+              </div>
+              <div class="mid">
+                <p>samy</p>
+              </div>
+              <div class="bottom"><span>08/01/2023</span><span>1.4MB</span></div>
+            </div>
+          </div>
+          <div class="files_stats">
+            <h3>files statistics</h3>
+            <div class="mid">
+              <div class="box">
+                <div><i class="fa-regular fa-file-pdf" id="pdf"></i>
+                  <div>
+                    <h5>PDF files</h5>
+                    <p>185</p>
+                  </div>
+                </div><span>0.8GB</span>
+              </div>
+              <div class="box">
+                <div><i class="fa-regular fa-images" id="images"></i>
+                  <div>
+                    <h5>images</h5>
+                    <p>345</p>
+                  </div>
+                </div><span>2.8GB</span>
+              </div>
+              <div class="box">
+                <div><i class="fa-solid fa-file-csv" id="csv"></i>
+                  <div>
+                    <h5>csv</h5>
+                    <p>285</p>
+                  </div>
+                </div><span>0.3GB</span>
+              </div>
+              <div class="box">
+                <div><i class="fa-solid fa-file-zipper" id="zipper"></i>
+                  <div>
+                    <h5>zip</h5>
+                    <p>52</p>
+                  </div>
+                </div><span>6.4GB</span>
+              </div>
+            </div>
+            <div class="bottom">
+              <button type="submit"> <i class="fa-solid fa-angles-up"> </i>upload</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

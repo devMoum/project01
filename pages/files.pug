@@ -1,0 +1,142 @@
+extends ../index
+
+block pageName 
+    - pageName = "files";
+
+block page content
+    .container
+        .files
+            -
+                var filesList = {
+                    //- "file name": [
+                    //-     "uploader",
+                    //-     "upload date",
+                    //-     "flie size",
+                    //-     "file type"
+                    //- ],
+                    "cv.pdf": [
+                        "samy",
+                        "02/03/2023",
+                        1.2,
+                        "pdf"
+                    ],
+                    "file.psd": [
+                        "anis",
+                        "22/02/2023",
+                        6.1,
+                        "psd"
+                    ],
+                    "file.dll": [
+                        "midou",
+                        "16/02/2023",
+                        0.6,
+                        "dll"
+                    ],
+                    "file.avi": [
+                        "abdou",
+                        "12/02/2023",
+                        1.9,
+                        "avi"
+                    ],
+                    "file.eps": [
+                        "zak",
+                        "08/01/2023",
+                        2.4,
+                        "eps"
+                    ],
+                    "file2.avi": [
+                        "zak",
+                        "08/01/2023",
+                        2.4,
+                        "avi"
+                    ],
+                    "file2.psd": [
+                        "moum",
+                        "08/01/2023",
+                        2.4,
+                        "psd"
+                    ],
+                    "file2.eps": [
+                        "moum",
+                        "08/01/2023",
+                        2.4,
+                        "eps"
+                    ],
+                    "file4.psd": [
+                        "moum",
+                        "08/01/2023",
+                        4.4,
+                        "psd"
+                    ],
+                    "file3.zip": [
+                        "moum",
+                        "08/01/2023",
+                        2.4,
+                        "zip"
+                    ],
+                    "file4.psd": [
+                        "wahab",
+                        "08/01/2023",
+                        2.4,
+                        "psd"
+                    ],
+                    "file7.pdf": [
+                        "zak",
+                        "08/01/2023",
+                        3.4,
+                        "pdf"
+                    ],
+                    "file4.pdf": [
+                        "samy",
+                        "08/01/2023",
+                        1.4,
+                        "pdf"
+                    ],
+                };
+                var files = Object.keys(filesList);
+            each file, index in files
+                .file
+                    .top
+                        i(class="fa-solid fa-download")
+                        img(src="../images/"+filesList[file][3]+".svg", alt="")
+                        h5= file
+                    .mid
+                        p= filesList[file][0]
+                    .bottom
+                        span= filesList[file][1]
+                        span #{filesList[file][2]}MB
+        .files_stats
+            h3 files statistics
+            .mid
+                .box
+                    div
+                        i(class="fa-regular fa-file-pdf" id="pdf")
+                        div
+                            h5 PDF files
+                            p 185
+                    span 0.8GB
+                .box
+                    div
+                        i(class="fa-regular fa-images" id="images")
+                        div
+                            h5 images
+                            p 345
+                    span 2.8GB
+                .box
+                    div
+                        i(class="fa-solid fa-file-csv" id="csv")
+                        div
+                            h5 csv
+                            p 285
+                    span 0.3GB
+                .box
+                    div
+                        i(class="fa-solid fa-file-zipper" id="zipper")
+                        div
+                            h5 zip
+                            p 52
+                    span 6.4GB
+            .bottom
+                button(type="submit") 
+                    i(class="fa-solid fa-angles-up") 
+                    | upload

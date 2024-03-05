@@ -1,0 +1,113 @@
+extends ../index
+
+block pageName 
+    - pageName = "settings";
+
+block page content
+    .container
+        div(class="sec control")
+            div(class="top")
+                h3 site control
+                p control the website if there is maintenance
+            div(class="config")
+                div
+                    h4 website control
+                    p open/close website and type the reason
+                div(class="switch control-switch")
+            textarea(name="close" placeholder="close message content..")
+        div(class="sec info")
+            div(class="top")
+                h3 general info
+                p general information about your account
+            form(action="")
+                label(name="first" for="first name") first name
+                input(type="text" id="first" placeholder="first name")
+                label(for="last name") last name
+                input(name="last" type="text" id="last" placeholder="last name")
+                label(for="email") email
+                div
+                    input(name="email" type="email" id="email" placeholder="per@ex" disabled)
+                    input(class="btn" type="button" value="change" )
+        div(class="sec security")
+            div(class="top")
+                h3 security info
+                p security informations about your account
+            div(class="box")
+                div(class="secure")
+                    div
+                        h4 password
+                        p last changed on 13/12/2023
+                    input(type="button" value="change" class="btn")
+                div(class="secure")
+                    div
+                        h4 two-factor authentication
+                        p enable/disable the feature
+                    div(class="switch")
+                div(class="secure")
+                    div
+                        h4 devices
+                        p check the login devices list
+                    input(type="button" value="devices" class="btn")
+        div(class="sec social")
+            div(class="top")
+                <h3>social info</h3>
+                <p>social media information</p>
+            div(class="box")
+                div(class="soc")
+                    i(class="fa-brands fa-twitter")
+                    input(type="text" placeholder="twitter username")
+                div(class="soc")
+                    i(class="fa-brands fa-facebook-f")
+                    input(type="text" placeholder="facebook username")
+                div(class="soc")
+                    i(class="fa-brands fa-linkedin")
+                    input(type="text" placeholder="linkedin username")
+                div(class="soc")
+                    i(class="fa-brands fa-youtube")
+                    input(type="text" placeholder="youtube username")
+        div(class="sec widgets")
+            div(class="top")
+                h3 widgets control
+                p show/hide widgets
+            div(class="box")
+                -
+                    var widgets = [
+                        "quick draft",
+                        "yearly targets",
+                        "tickets statistics",
+                        "latest news",
+                        "latest tasks",
+                        "top search items"
+                        ]
+                each widget, index in widgets 
+                    div(class="check")
+                        input(type="checkbox" name=index id=index)
+                        i(class="fa-solid fa-check")
+                        label(for=index)=widget
+        div(class="sec backup")
+            div(class="top")
+                h3 backup manager
+                p control backup time and location
+            div(class="box")
+                -
+                    var time = [
+                        "daily",
+                        "weekly",
+                        "monthly"
+                    ]
+                each val, index in time 
+                    div(class="radio")
+                        input(type="radio" id="rad"+index name="rad" checked)
+                        label(for="rad"+index)= val
+            div(class="box2")
+                -
+                    var locat = [
+                        "europe",
+                        "africa",
+                        "asia"
+                    ]
+                each val, index in locat 
+                    div(class="radio")
+                        input(type="radio" id="rad2"+index name="rad2")
+                        i(class="fa-solid fa-server")
+                        label(for="rad2"+index)= val

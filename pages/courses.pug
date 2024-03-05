@@ -1,0 +1,61 @@
+extends ../index
+
+block pageName 
+    - pageName = "courses";
+
+block page content
+    .container
+        -
+            var coursesList = {
+                course01: [
+                    [1, 1],
+                    "Mastering Web Design",
+                    "description",
+                    400,
+                    50
+                ],
+                course02: [
+                    [2, 2],
+                    "Data Structure And Algorithms",
+                    "description",
+                    50,
+                    250
+                ],
+                course03: [
+                    [3, 3],
+                    "Responsive Web Design",
+                    "description",
+                    470,
+                    250
+                ],
+                course04: [
+                    [4, 5],
+                    "PHP Examples",
+                    "description",
+                    900,
+                    20
+                ],
+                course05: [
+                    [5, 1],
+                    "Mastering Python",
+                    "description",
+                    400,
+                    350
+                ]
+            }
+            var courses = Object.keys(coursesList);
+        each cour, index in courses
+            .course
+                .top
+                    img(src="../images/course-0"+ coursesList[cour][0][0] +".jpg", alt="")
+                    img(class="avatar" src="../images/team-0"+ coursesList[cour][0][1] +".png", alt="")
+                .mid
+                    h4= coursesList[cour][1]
+                    p= coursesList[cour][2]
+                .bottom
+                    .studs 
+                        i(class="fa-regular fa-user")
+                        span= coursesList[cour][3]
+                    .price
+                        span $#{coursesList[cour][4]}
+                    button(type='submit') course info

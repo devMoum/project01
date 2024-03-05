@@ -1,0 +1,113 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.container .plan{
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .plan .top{
+    padding: 4px;
+    
+}
+.container .free .top{
+    border: 3px solid #22c55e;
+}
+.container .basic .top{
+    border: 3px solid #0075ff;
+    
+}
+.container .prem .top{
+    border: 3px solid #f59e0b;
+}
+.container .plan .top > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+    color: white;
+}
+.container .free .top > div{
+    background-color: #22c55e;
+}
+.container .basic .top > div{
+    background-color: #0075ff;
+}
+.container .prem .top > div{
+    background-color: #f59e0b;
+}
+.container .plan .top p{
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.container .plan .top .price{
+    position: relative;
+}
+.container .plan .top .price span{
+    position: absolute;
+    left: -20px;
+    top: -5px;
+    font-size: 26px;
+    font-weight: 400;
+}
+.container .plan .top .price h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+/* start mid  */
+.container .plan .mid .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.container .plan .mid .box > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container .plan .mid .box > div i{
+    font-size: 18px;
+}
+.container .plan .mid .box > div .fa-check{
+    color: #22c55e;
+}
+.container .plan .mid .box > div .fa-xmark{
+    color: #f44336;
+}
+.container .plan .mid .box > i{
+    color: #888888;
+    cursor: pointer;
+}
+/* start button  */
+.container .plan button{
+    align-self:flex-start;
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-transform: capitalize;
+}
+.container .free button{
+    background-color: #22c55e;
+}
+.container .basic button{
+    background-color: #0075ff;
+}
+.container .prem button{
+    background-color: #f59e0b;
+}
