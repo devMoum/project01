@@ -13,7 +13,9 @@ block page content
                 div
                     h4 website control
                     p open/close website and type the reason
-                div(class="switch control-switch")
+                label 
+                    input(class="toggle-checkbox" type="checkbox")
+                    div(class="toggle-switch")
             textarea(name="close" placeholder="close message content..")
         div(class="sec info")
             div(class="top")
@@ -50,8 +52,8 @@ block page content
                     input(type="button" value="devices" class="btn")
         div(class="sec social")
             div(class="top")
-                <h3>social info</h3>
-                <p>social media information</p>
+                h3 social info
+                p social media information
             div(class="box")
                 div(class="soc")
                     i(class="fa-brands fa-twitter")
@@ -82,8 +84,8 @@ block page content
                 each widget, index in widgets 
                     div(class="check")
                         input(type="checkbox" name=index id=index)
-                        i(class="fa-solid fa-check")
                         label(for=index)=widget
+                            i(class="fa-solid fa-check")
         div(class="sec backup")
             div(class="top")
                 h3 backup manager

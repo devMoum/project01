@@ -1,5 +1,5 @@
 ## 🐱‍👤 Overview
-This Is A Front End Project v_^. It's a controle manager website .
+This Is A Front End Project v_^. A DASHBOARD 📊⚙ .
 
 ## 💻 Live Demo
 https://devmoum.github.io/project01/

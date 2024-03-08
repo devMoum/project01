@@ -26,6 +26,7 @@
 .sections .container .sec{
     background-color: white;
     text-transform: capitalize;
+    border-radius: 8px;
     padding: 20px;
 }
 .sections .sec .top{
@@ -37,45 +38,6 @@
 }
 .sections .sec .top p{
     font-size: 16px;
-}
-.btn {
-    padding: 5px 15px;
-    height: 35px;
-    font-size: 14px;
-    font-weight: 500;
-    border: 1px solid var(--blue);
-    text-transform: capitalize;
-    color: white;
-    background-color: var(--blue);
-    cursor: pointer;
-}
-.switch {
-    position: relative;
-    width: 80px;
-    height: 35px;
-    border-radius: 20px;
-    background-color: var(--background);
-    cursor: pointer;
-    transition: var(--main-transition) ease-in-out;
-}
-.switch::before {
-    content: "";
-    position: absolute;
-    bottom: 5px;
-    transform: translate(40%, 0);
-    left: 0;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: var(--background);
-    transition: var(--main-transition) ease-in-out;
-}
-.switch:hover{
-    background-color: var(--blue);
-}
-.switch:hover.switch::before{
-    left: 50%;
-    background-color: white;
 }
 /* end section  */
 /* start control  */
@@ -210,6 +172,7 @@
 .sections .widgets .box{
     display: flex;
     flex-direction: column;
+    padding: 20px 0;
     gap: 20px;
 }
 .sections .widgets .box .check{
@@ -220,16 +183,15 @@
     align-items: center;
     position: relative;
 }
-.sections .widgets .box .check label{
-    cursor: pointer;
-}
 .sections .widgets .box .check input[type="checkbox"]{
-    width: 20px;
-    height: 20px;
     appearance: none;
-    position: relative;
 }
-.sections .widgets .box .check input[type="checkbox"]::before{
+.sections .widgets .box .check label{
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+.sections .widgets .box .check label::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -242,10 +204,11 @@
 .sections .widgets .box .check i{
     position: absolute;
     color: white;
-    left: 4px;
+    left: 0;
+    transform: translate(30%, 10%);
     font-size: 14px;
 }
-.sections .widgets .box .check input[type="checkbox"]:checked::before{
+.sections .widgets .box .check input[type="checkbox"]:checked + label::before{
     background-color: var(--blue);
     border-color: var(--blue);
 }

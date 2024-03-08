@@ -29,6 +29,7 @@
 .sections .container .sec{
     background-color: white;
     text-transform: capitalize;
+    border-radius: 8px;
     padding: 20px;
 }
 .sections .sec .top{
@@ -41,52 +42,14 @@
 .sections .sec .top p{
     font-size: 16px;
 }
-.btn {
-    padding: 5px 15px;
-    height: 35px;
-    font-size: 14px;
-    font-weight: 500;
-    border: 1px solid var(--blue);
-    text-transform: capitalize;
-    color: white;
-    background-color: var(--blue);
-    cursor: pointer;
-}
-.switch {
-    position: relative;
-    width: 80px;
-    height: 35px;
-    border-radius: 20px;
-    background-color: var(--background);
-    cursor: pointer;
-    transition: var(--main-transition) ease-in-out;
-}
-.switch::before {
-    content: "";
-    position: absolute;
-    bottom: 5px;
-    transform: translate(40%, 0);
-    left: 0;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: var(--background);
-    transition: var(--main-transition) ease-in-out;
-}
-.switch:hover{
-    background-color: var(--blue);
-}
-.switch:hover.switch::before{
-    left: 50%;
-    background-color: white;
-}
 /* end global  */
 /* start user  */
 .sections .user {
-    padding: 20px;
     display: flex;
     background-color: white;
     gap: 30px;
+    padding: 20px;
+    border-radius: 8px;
 }
 .sections .user .logo{
     text-transform: capitalize;
@@ -150,7 +113,7 @@
 .sections .user .info .general{
     border-bottom: 1px solid #ddd;
     padding: 0;
-    margin: 10px 0 0;
+    padding: 10px 0;
 }
 .sections .user .info .billing{
     border: none;
@@ -192,7 +155,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     gap: 15px;
-    height: 100%;
 }
 .sections .semi_cont .skills .box div{
     text-transform: capitalize;
@@ -207,6 +169,7 @@
 }
 .sections .semi_cont .skills .box div span{
     padding: 5px 10px;
+    margin-right: 5px;
     background-color: var(--background);
     border-radius: 8px;
 }

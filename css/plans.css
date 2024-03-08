@@ -9,11 +9,12 @@
     }
 }
 .container .plan{
-    padding: 20px;
-    background-color: white;
     display: flex;
     flex-direction: column;
+    background-color: white;
     gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
 }
 .container .plan .top{
     padding: 4px;
